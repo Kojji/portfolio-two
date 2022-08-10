@@ -9,12 +9,12 @@ import hexagon from '/src/assets/hexagon.png'
   <section id="hexagon-background" class="bg-contain bg-center w-full" style="overflow:hidden; z-index:2;">
     <!-- <div class="max-w-7xl mx-auto px-3"> -->
     <div class="mx-auto px-5">
-      <div class="columns-1 md:columns-2">
+      <div class="flex">
         <!-- <div class="bg-gray-600 h-screen"> -->
-        <div class="h-screen">
+        <div class="flex-1 bg-gray-600 h-screen">
           test
         </div>
-        <div class="h-screen">
+        <div class="flex-1 bg-red-600 h-screen">
           <div class="info-grid">
 
             test
