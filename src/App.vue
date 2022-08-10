@@ -1,4 +1,10 @@
+<script setup>
+  import FullScreenBanner from '/src/components/FullScreenBanner.vue'
+</script>
+
 <template>
+  <FullScreenBanner />
+  <div class="h-screen bg-blue-200"></div>
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
