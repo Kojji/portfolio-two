@@ -1,7 +1,7 @@
 <script setup>
 import TopNav from './TopNav.vue';
-import holeBack from '/src/assets/background-hole.png'
-import hexagon from '/src/assets/hexagon.png'
+import holeBack from '/src/assets/images/background-hole.png'
+import hexagon from '/src/assets/images/hexagon.png'
 </script>
 
 <template>

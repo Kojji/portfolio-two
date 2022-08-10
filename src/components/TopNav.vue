@@ -1,5 +1,5 @@
 <script setup>
-import logo from '/src/assets/logo-white.png'
+import logo from '/src/assets/images/logo-white.png'
 
 const language = 'Português';
 </script>
