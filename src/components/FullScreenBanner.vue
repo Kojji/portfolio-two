@@ -1,6 +1,6 @@
 <script setup>
 import TopNav from './TopNav.vue';
-import holeBack from '/src/assets/images/background-hole.png'
+// import holeBack from '/src/assets/images/background-hole.png'
 import hexagon from '/src/assets/images/hexagon.png'
 </script>
 
@@ -11,13 +11,13 @@ import hexagon from '/src/assets/images/hexagon.png'
     <div class="mx-auto px-5">
       <div class="flex">
         <!-- <div class="bg-gray-600 h-screen"> -->
-        <div class="flex-1 bg-gray-600 h-screen">
+        <div class="flex-1 h-screen">
           test
         </div>
-        <div class="flex-1 bg-red-600 h-screen">
+        <div class="flex-1 h-screen">
           <div class="info-grid">
 
-            test
+            {{$t('HomeBanner.CallToAction')}}
           </div>
         </div>
         <!-- <div id="animation">
@@ -98,7 +98,7 @@ import hexagon from '/src/assets/images/hexagon.png'
   filter: saturate(1.6);
 }
 #hexagon-background{
-  background-image: url('/src/assets/hexagonBackground.png');
+  background-image: url('/src/assets/images/hexagonBackground.png');
   background-repeat: no-repeat;
   background-color: #a855f7;
 }

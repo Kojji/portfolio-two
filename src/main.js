@@ -8,6 +8,7 @@ import messages from '/src/assets/i18n'
 import detectLanguage from "/src/assets/languageDetect"
 
 const i18n = createI18n({
+  legacy: false,
   locale: detectLanguage() == 'pt' ? 'pt' : 'en', // set locale
   // locale: 'pt',
   fallbackLocale: 'en', // set fallback locale
@@ -15,4 +16,5 @@ const i18n = createI18n({
   messages, // set locale messages
 })
 
-createApp(App).use(i18n).use(store).use(router).mount('#app')
+const app = createApp(App).use(i18n).use(store).use(router).mount('#app')
+// app.provide('$i18n', i18n)
