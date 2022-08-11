@@ -5,11 +5,10 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { ChevronDownIcon } from '@heroicons/vue/solid'
 import detectLanguage from "/src/assets/languageDetect"
 
-// const $i18n = inject('$i18n');
+const $i18n = inject('$i18n');
 function changeLocale(location) {
-  console.log(this.$i18n)
+  $i18n.locale = location
 }
-
 
 const language = detectLanguage() == 'pt' ? ref('Português') : ref('English');
 </script>

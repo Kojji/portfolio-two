@@ -16,5 +16,6 @@ const i18n = createI18n({
   messages, // set locale messages
 })
 
-const app = createApp(App).use(i18n).use(store).use(router).mount('#app')
-// app.provide('$i18n', i18n)
+const app = createApp(App).use(i18n).use(store).use(router)
+app.provide('$i18n', app.config.globalProperties.$i18n)
+app.mount('#app')
