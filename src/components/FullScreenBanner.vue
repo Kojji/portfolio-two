@@ -1,18 +1,36 @@
 <script setup>
+import { ref, inject, computed } from 'vue'
 import TopNav from './TopNav.vue';
 // import holeBack from '/src/assets/images/background-hole.png'
 import hexagon from '/src/assets/images/hexagon.png'
+const $store = inject('$store');
+
+let windowWidth = computed(() => $store.getters.getWindowWidth)
 </script>
 
 <template>
   <TopNav />
-  <section id="hexagon-background" class="bg-contain bg-center w-full" style="overflow:hidden; z-index:2;">
+  <section id="hexagon-background" class="md:bg-contain bg-cover bg-center w-full" style="overflow:hidden; z-index:2;">
     <!-- <div class="max-w-7xl mx-auto px-3"> -->
     <div class="mx-auto px-5">
       <div class="flex">
         <!-- <div class="bg-gray-600 h-screen"> -->
-        <div class="flex-1 h-screen">
-          test
+        <div v-if="windowWidth > 991.98" class="flex-1 h-screen">
+          <!-- <div class="info-grid">
+            <div class="background-image"><img alt="text-background" class="text-background" src="https://drive.google.com/uc?export=view&id=1OPsCZK9Zpbkfc3U0KY8Fzx0HyhH2jbrS" /></div>
+            <div class="text-content row">
+              <div class="col-9 offset-2">
+                <div class="main-text-slot"> -->
+                  <p>Fernando Koji Yamashiro</p>
+                  <!-- <p class="role-text text-size-2">{{$t('HomeBanner.Profession')}}</p>
+                </div>
+                <p class="py-3" style="font-weight: bold;">{{$t('HomeBanner.Text')}}</p>
+                <a href="mailto:fernandokojiyama@gmail.com" target="_blank">
+                  <button type="button" class="btn color-button">{{$t('HomeBanner.CallToAction')}}</button>
+                </a>
+              </div>
+            </div>
+          </div> -->
         </div>
         <div class="flex-1 h-screen">
           <div class="info-grid">

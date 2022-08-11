@@ -1,5 +1,11 @@
 <script setup>
-  import FullScreenBanner from '/src/components/FullScreenBanner.vue'
+import FullScreenBanner from '/src/components/FullScreenBanner.vue'
+import { inject, onMounted, onUnmounted } from 'vue'
+
+const $store = inject('$store');
+const onWidthChange = () => { $store.commit('setWindowWidth', window.innerWidth) }
+onMounted(() => { onWidthChange(); window.addEventListener('resize', onWidthChange) })
+onUnmounted(() => window.removeEventListener('resize', onWidthChange))
 </script>
 
 <template>

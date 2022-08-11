@@ -31,10 +31,10 @@ const language = detectLanguage() == 'pt' ? ref('Português') : ref('English');
               <MenuItems class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div class="py-1">
                   <MenuItem v-slot="{ active }" @click="changeLocale('pt'), language = 'Português'">
-                    <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']">Português</a>
+                    <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'font-bold block px-4 py-2 text-sm']">Português</a>
                   </MenuItem>
                   <MenuItem v-slot="{ active }" @click="changeLocale('en'), language = 'English'">
-                    <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm']">English</a>
+                    <a href="#" :class="[active ? 'bg-gray-100 text-gray-900' : 'text-gray-700', 'font-bold block px-4 py-2 text-sm']">English</a>
                   </MenuItem>
                 </div>
               </MenuItems>

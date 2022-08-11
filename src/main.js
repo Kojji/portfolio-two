@@ -18,4 +18,5 @@ const i18n = createI18n({
 
 const app = createApp(App).use(i18n).use(store).use(router)
 app.provide('$i18n', app.config.globalProperties.$i18n)
+app.provide('$store', app.config.globalProperties.$store)
 app.mount('#app')
