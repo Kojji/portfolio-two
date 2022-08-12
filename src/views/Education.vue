@@ -1,8 +1,15 @@
+<script setup>
+import { inject, computed } from 'vue'
+import EducationMDItem from '/src/components/EducationMDItem.vue';
+import EducationSMItem from '/src/components/EducationSMItem.vue';
+const $store = inject('$store');
+
+let windowWidth = computed(() => $store.getters.getWindowWidth)
+</script>
+
 <template>
-  <div class="experience">
-    <h1>This is an education page</h1>
-    <h1 class="text-3xl font-bold underline">
-    Tailwind classed!
-  </h1>
+  <div class="education">
+    <EducationMDItem v-if="windowWidth > 767.98" />
+    <EducationSMItem v-else />
   </div>
 </template>

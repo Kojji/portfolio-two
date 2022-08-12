@@ -1,5 +1,5 @@
 <script setup>
-import { ref, inject, reactive } from 'vue'
+import { inject, reactive } from 'vue'
 import { useRoute } from 'vue-router';
 
 const $t = inject('$t');

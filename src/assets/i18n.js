@@ -47,16 +47,52 @@ export default {
       },
       Education: {
         PageTitle: "Education",
-        ItemTitleOne: "2022 - [Computer Engineering] UFGD",
-        ItemTitleTwo: "2014 - [Electronics Technician] IFSP-SP",
-        ItemTitleThree: "2017 - [First Certificate in English (FCE)] Cambrigde English",
-        ItemTitleFour: "2018 - [Certificate in Advanced English (CAE)] Cambrigde English",
-        TitleFirst: "Education Background",
-        TitleSecond: "Certifications",
-        ItemTextOne: "Degree obtained by concluding the Computer Engineering course at \"Universidade Federal da Grande Dourados (UFGD)\". As course conclusion critereas, I've done an intership at \"Dourasoft\", and for the final paper, with another student, we developed a system to collect data from the soil, which is based on networking multiple wireless sensor nodes, named \"Agriv\".",
-        ItemTextTwo: "Degree obtained by concluding the Electonics Technician integrated with High School course at \"Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus São Paulo (IFSP-SP)\". As course conclusion critereas, I've done an intership at \"Aureon\", and developed, with other students, a digital door lock system for the final paper.",
-        ItemTextThree: "Certification regarding the score of 183 at Cambridge's CAE examination, equivalent to CEFR's C1 Level.",
-        ItemTextFour: "Certification regarding the score of 193 at Cambridge's FCE examination, equivalent to CEFR's C1 Level."
+        Sections: [
+          {
+            id: 1,
+            title: "certification",
+            value: "Certifications",
+            items: [
+              {
+                id: 1,
+                title: "ufgd",
+                valueLabel: "2021 - [Computer Engineering] UFGD",
+                valueDescription: "Degree obtained by concluding the Computer Engineering course at \"Universidade Federal da Grande Dourados (UFGD)\". As course conclusion critereas, I've done an intership at \"Dourasoft\", and for the final paper, with another student, we developed a system to collect data from the soil, which is based on networking multiple wireless sensor nodes, named \"Agriv\".",
+              },
+              {
+                id: 2,
+                title: "ifsp",
+                valueLabel: "2013 - [Electronics Technician] IFSP-SP",
+                valueDescription: "Degree obtained by concluding the Electonics Technician integrated with High School course at \"Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus São Paulo (IFSP-SP)\". As course conclusion critereas, I've done an intership at \"Aureon\", and developed, with other students, a digital door lock system for the final paper.",
+              }
+            ]
+          },
+          {
+            id: 2,
+            title: "education",
+            value: "Education Background",
+            items: [
+              {
+                id: 1,
+                title: "ccp",
+                valueLabel: "2022 - [Certified Cloud Practitioner (CCP)] AWS",
+                valueDescription: "Certification regarding passing grade at AWS CCP examination.",
+              },
+              {
+                id: 2,
+                title: "cae",
+                valueLabel: "2018 - [Certificate in Advanced English (CAE)] Cambrigde English",
+                valueDescription: "Certification regarding the score of 183 at Cambridge's CAE examination, equivalent to CEFR's C1 Level.",
+              },
+              {
+                id: 3,
+                title: "fce",
+                valueLabel: "2017 - [First Certificate in English (FCE)] Cambrigde English",
+                valueDescription: "Certification regarding the score of 193 at Cambridge's FCE examination, equivalent to CEFR's C1 Level.",
+              }
+            ]
+          }
+        ]
       },
       Experience: {
         PageTitle: "Professional Experience",
@@ -160,16 +196,52 @@ export default {
       },
       Education: {
         PageTitle: "Formação",
-        ItemTitleOne: "2021 - [Engenheiro de Computação] UFGD",
-        ItemTitleTwo: "2013 - [Técnico em Eletrônica] IFSP-SP",
-        ItemTitleThree: "2018 - [Certificate in Advanced English (CAE)] Cambridge English",
-        ItemTitleFour: "2017 - [First Certificate in English (FCE)] Cambridge English",
-        TitleFirst: "Formação Acadêmica",
-        TitleSecond: "Certificações",
-        ItemTextOne: "Conclusão do curso de Engenharia de Computação na Universidade Federal da Grande Dourados (UFGD). Como critério de formação, realizei um estágio na \"Dourasoft\", e desenvolvi, com outro acadêmico, um sistema de coleta de dados do solo, composto de multiplos equipamentos de comunicação sem fio, denominado Agriv, como TCC.",
-        ItemTextTwo: "Conclusão do curso de Técnico em Eletrônica e Ensino Médio no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus São Paulo (IFSP-SP). Como critérios de formação, realizei um estágio na \"Aureon\", e desenvolvi, junto com outros acadêmicos, um sistema de trava eletrônica por senha como TCC.",
-        ItemTextThree: "Certificado de pontuação 183 no exame CAE de Cambridge, equivalente ao nível C1 do \"CEFR\".",
-        ItemTextFour: "Certificado de pontuação 193 no exame FCE de Cambridge, equivalente ao nível C1 do \"CEFR\"."
+        Sections: [
+          {
+            id: 1,
+            title: "certification",
+            value: "Certificações",
+            items: [
+              {
+                id: 1,
+                title: "ufgd",
+                valueLabel: "2021 - [Engenheiro de Computação] UFGD",
+                valueDescription: "Conclusão do curso de Engenharia de Computação na Universidade Federal da Grande Dourados (UFGD). Como critério de formação, realizei um estágio na \"Dourasoft\", e desenvolvi, com outro acadêmico, um sistema de coleta de dados do solo, composto de multiplos equipamentos de comunicação sem fio, denominado Agriv, como TCC.",
+              },
+              {
+                id: 2,
+                title: "ifsp",
+                valueLabel: "2013 - [Técnico em Eletrônica] IFSP-SP",
+                valueDescription: "Conclusão do curso de Técnico em Eletrônica e Ensino Médio no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Campus São Paulo (IFSP-SP). Como critérios de formação, realizei um estágio na \"Aureon\", e desenvolvi, junto com outros acadêmicos, um sistema de trava eletrônica por senha como TCC.",
+              }
+            ]
+          },
+          {
+            id: 2,
+            title: "education",
+            value: "Formação Acadêmica",
+            items: [
+              {
+                id: 1,
+                title: "ccp",
+                valueLabel: "2022 - [Certified Cloud Practitioner (CCP)] AWS",
+                valueDescription: "Certificado referente à aprovação no exame CCP da AWS.",
+              },
+              {
+                id: 2,
+                title: "cae",
+                valueLabel: "2018 - [Certificate in Advanced English (CAE)] Cambridge English",
+                valueDescription: "Certificado de pontuação 183 no exame CAE de Cambridge, equivalente ao nível C1 do \"CEFR\".",
+              },
+              {
+                id: 3,
+                title: "fce",
+                valueLabel: "2017 - [First Certificate in English (FCE)] Cambrigde English",
+                valueDescription: "Certificado de pontuação 193 no exame FCE de Cambridge, equivalente ao nível C1 do \"CEFR\".",
+              },
+            ]
+          }
+        ]
       },
       Experience: {
         PageTitle: "Experiência Profissional",

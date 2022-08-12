@@ -15,7 +15,7 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
     <div class="mx-auto px-5">
       <div class="flex">
         <!-- <div class="bg-gray-600 h-screen"> -->
-        <div v-if="windowWidth > 991.98" class="flex-1 h-screen">
+        <div v-if="windowWidth > 767.98" class="flex-1 h-screen">
           <div class="name-grid">
             <div>
               <div class="inline-flex mb-2">
