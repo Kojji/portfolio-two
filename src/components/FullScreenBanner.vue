@@ -1,6 +1,6 @@
 <script setup>
 import { ref, inject, computed } from 'vue'
-import TopNav from './TopNav.vue';
+import TopNav from '/src/components/TopNav.vue';
 // import holeBack from '/src/assets/images/background-hole.png'
 import hexagon from '/src/assets/images/hexagon.png'
 const $store = inject('$store');
@@ -51,34 +51,18 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
         </div>
         <div class="flex-1 h-screen">
           <div class="info-grid">
-
+            
+            <!-- <div id="animation">
+              <div class="square" style="background: orange;"></div>
+              <div class="square" style="background: blue;"></div>
+              <div class="square" style="background: green;"></div>
+              <div ><img id="back-hole" :src="holeBack" /></div>
+              <div id="bottom-hole"></div>
+            </div> -->
             {{$t('HomeBanner.CallToAction')}}
           </div>
         </div>
-        <!-- <div id="animation">
-          <div class="square" style="background: orange;"></div>
-          <div class="square" style="background: blue;"></div>
-          <div class="square" style="background: green;"></div>
-          <div ><img id="back-hole" :src="holeBack" /></div>
-          <div id="bottom-hole"></div>
-        </div> -->
       </div>
-
-      <!-- <div class="flex justify-between" style="min-height: 10%;">
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2" style="min-height: 90%;">
-        <div class="bg-gray-600">
-          test
-        </div>
-        <div id="animation">
-          <div class="square" style="background: orange;"></div>
-          <div class="square" style="background: blue;"></div>
-          <div class="square" style="background: green;"></div>
-          <div ><img id="back-hole" :src="holeBack" /></div>
-          <div id="bottom-hole"></div>
-
-        </div>
-      </div> -->
     </div>
   </section>
 </template>
