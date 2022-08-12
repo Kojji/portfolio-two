@@ -41,8 +41,8 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
               <h1 class="text-white font-bold text-5xl font-sans">FERNANDO KOJI</h1>
               <p class="text-white font-semibold text-3xl">{{$t('HomeBanner.Profession')}}</p>
               <a href="mailto:fernandokojdev@gmail.com" target="_blank">
-                <button type="button" class="flex items-center justify-center items-center mt-10 w-36 h-12 rounded-md bg-amber-600 font-semibold text-lg text-zinc-100 hover:bg-amber-700">
-                  <font-awesome-icon icon="fa-solid fa-envelope" size="md" />
+                <button type="button" class="flex items-center drop-shadow-xl justify-center items-center mt-10 w-36 h-12 rounded-md bg-amber-600 font-semibold text-lg text-zinc-100 hover:bg-amber-700">
+                  <font-awesome-icon icon="fa-solid fa-envelope" />
                   <p class="pl-2">{{ $t('HomeBanner.CallToAction') }}</p>
                 </button>
               </a>

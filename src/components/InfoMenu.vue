@@ -1,27 +1,28 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, inject, reactive } from 'vue'
+import { useRoute } from 'vue-router';
 
-const horizontalMenuState = ref('Personal')
+const $t = inject('$t');
+
+let menuItems = reactive([
+  $t('HorizontalMenu[0].route'),
+  $t('HorizontalMenu[1].route'),
+  $t('HorizontalMenu[2].route'),
+  $t('HorizontalMenu[3].route'),
+  $t('HorizontalMenu[4].route'),
+])
+
+const route = useRoute();
 </script>
 
 <template>
   <div>
-    <div class="w-full inline-flex justify-center">
-      <router-link to="/">
-        <button id="Personal" class="w-24 rounded-md bg-amber-400 hover:bg-amber-500" :class="{ 'bg-amber-500' : horizontalMenuState == 'Personal' }" @click="horizontalMenuState = 'Personal'" ><a>{{$t('HorizontalMenu.PersonalItem')}}</a></button>
-      </router-link>
-      <router-link to="/experience">
-        <button id="Experience" class="w-24 rounded-md bg-amber-400 hover:bg-amber-500" :class="{ 'bg-amber-500' : horizontalMenuState == 'Experience' }" @click="horizontalMenuState = 'Experience'" ><a>{{$t('HorizontalMenu.ExperienceItem')}}</a></button>
-      </router-link>
-      <router-link to="/skill">
-        <button id="Skill" class="w-24 rounded-md bg-amber-400 hover:bg-amber-500" :class="{ 'bg-amber-500' : horizontalMenuState == 'Skill' }" @click="horizontalMenuState = 'Skill'" ><a>{{$t('HorizontalMenu.SkillItem')}}</a></button>
-      </router-link>
-      <router-link to="/education">
-        <button id="Education" class="w-24 rounded-md bg-amber-400 hover:bg-amber-500" :class="{ 'bg-amber-500' : horizontalMenuState == 'Education' }" @click="horizontalMenuState = 'Education'" ><a>{{$t('HorizontalMenu.EducationItem')}}</a></button>
-      </router-link>
-      <router-link to="/animation">
-        <button id="Animation" class="w-24 rounded-md bg-amber-400 hover:bg-amber-500" :class="{ 'bg-amber-500' : horizontalMenuState == 'Animation' }" @click="horizontalMenuState = 'Animation'" ><a>{{$t('HorizontalMenu.AnimationItem')}}</a></button>
-      </router-link>
+    <div class="w-full inline-flex justify-center md:my-10 my-5">
+      <div v-for="(items, index) in menuItems" :key="items">
+        <router-link :to="$t(`HorizontalMenu[${index}].route`)">
+          <button :id="$t(`HorizontalMenu[${index}].id`)" class="md:w-28 md:h-12 w-20 h-10 rounded-md md:mx-1 mx-0.5 md:text-lg text-sm text-zinc-100 drop-shadow-xl font-semibold bg-amber-600 hover:bg-amber-700" :class="{ 'bg-amber-700' : route.path == $t(`HorizontalMenu[${index}].route`) }" ><a>{{$t(`HorizontalMenu[${index}].value`)}}</a></button>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

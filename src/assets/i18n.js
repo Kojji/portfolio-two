@@ -1,12 +1,37 @@
 export default {
   'en': {
-    HorizontalMenu: {
-      EducationItem: "Education",
-      ExperienceItem: "Experience",
-      PersonalItem: "About Me",
-      SkillItem: "Skills",
-      AnimationItem: "Animations"
-    },
+    HorizontalMenu: [
+      {
+        id: "menuAbout",
+        title: "about",
+        route: "/",
+        value: "About Me"
+      },
+      {
+        id: "menuEducation",
+        title: "education",
+        route: "/education",
+        value: "Education"
+      },
+      {
+        id: "menuExperience",
+        title: "experience",
+        route: "/experience",
+        value: "Experience"
+      },
+      {
+        id: "menuSkill",
+        title: "skill",
+        route: "/skill",
+        value: "Skills"
+      },
+      {
+        id: "menuAnimation",
+        title: "animation",
+        route: "/animation",
+        value: "Animations"
+      },
+    ],
     HomeBanner: {
       CallToAction: "Contact Me",
       Profession: "Web Developer",
@@ -88,13 +113,38 @@ export default {
     }
   },
   'pt': {
-    HorizontalMenu: {
-      EducationItem: "Formacão",
-      ExperienceItem: "Experiência",
-      PersonalItem: "Sobre Mim",
-      SkillItem: "Habilidades",
-      AnimationItem: "Animações"
-    },
+    HorizontalMenu: [
+      {
+        id: "menuAbout",
+        title: "about",
+        route: "/",
+        value: "Sobre Mim"
+      },
+      {
+        id: "menuEducation",
+        title: "education",
+        route: "/education",
+        value: "Formacão"
+      },
+      {
+        id: "menuExperience",
+        title: "experience",
+        route: "/experience",
+        value: "Experiência"
+      },
+      {
+        id: "menuSkill",
+        title: "skill",
+        route: "/skill",
+        value: "Habilidades"
+      },
+      {
+        id: "menuAnimation",
+        title: "animation",
+        route: "/animation",
+        value: "Animações"
+      },
+    ],
     HomeBanner: {
       CallToAction: "Contate me",
       Profession: "Desenvolvedor Web",
