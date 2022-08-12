@@ -96,9 +96,9 @@ export default {
       Personal: {
         PageTitle: "About Me",
         ParagraphFirst: "Hi, I'm Fernando. Graduated in Computer Engeneering, I'm a web developer. Working mostly as a back end developer. " + 
-          "I've already worked as a full stack web developer and, in some other projects, either in front end or back end development, which can be seen on the \"Experience\" tab. " + 
-          "My main development stack is composed of Vue.js and Node.js, but I've acquired knowledge in other concepts and technologies. To read a more detailed description of what I know, you can go straight to the \"Skills\" tab.",
-          ParagraphSecond: "In terms of web development, my biggest interests are API development and CSS/JS animations. Sadly, I still don't have the skillset to completely make the animations I envision. But one day I'll get there. " +
+          "I've already worked as a full stack web developer and, in some other projects, either in front end or back end development, which can be seen on the <b>\"Experience\"</b> tab. " + 
+          "My main development stack is composed of Vue.js and Node.js, but I've acquired knowledge in other concepts and technologies. To read a more detailed description of what I know, you can go straight to the <b>\"Skills\"</b> tab.",
+        ParagraphSecond: "In terms of web development, my biggest interests are API development and CSS/JS animations. Sadly, I still don't have the skillset to completely make the animations I envision. But one day I'll get there. " +
           "Spite the fact that I've acquired some API development experience, I know there is a lot of room for improvement, mainly at this profession, which requires constant growth.",
         ParagraphThird: "At the moment, this is the very first version of my online portfolio, while I plan on how to improve it, you're more than welcome to navigate through this page. Anyhow, with the links presented in the footer, you can either get to know me better or get in touch with me. 😁",
       },
@@ -209,8 +209,8 @@ export default {
       Personal: {
         PageTitle: "Sobre Mim",
         ParagraphFirst: "Olá, sou o Fernando. Formado em Engenharia de Computação, sou um desenvolvedor web. Atuando principalmente no back end. " + 
-          "Já tive atuações como desenvolvedor web full stack e desenvolvi alguns outros projetos só no front end ou só no back end, que podem ser vistos na aba \"Experiência\". " +
-          "Meu stack de desenvolvimento principal é composto de Vue.js e Node.js, mas tenho conhecimento em outros conceitos e tecnologias. Para ter uma descrição mais detalhada do que eu sei, pode ir direto na aba \"Habilidades\".",
+          "Já tive atuações como desenvolvedor web full stack e desenvolvi alguns outros projetos só no front end ou só no back end, que podem ser vistos na aba <b>\"Experiência\"</b>. " +
+          "Meu stack de desenvolvimento principal é composto de Vue.js e Node.js, mas tenho conhecimento em outros conceitos e tecnologias. Para ter uma descrição mais detalhada do que eu sei, pode ir direto na aba <b>\"Habilidades\"</b>.",
         ParagraphSecond: "Dentro do desenvolvimento web, meus maiores interesses são, o desenvolvimento de APIs e animações CSS/JS, porém ainda não tenho as habilidades necessárias para ser capaz de desenvolver plenamente as animações que visualizo. Mas acredito que um dia chegarei lá. " +
           "Apesar de já ter um pouco de experiência no desenvolvimento de APIs, reconheço que há muito espaço para crescimento, ainda mais nessa área que demanda evolução constante, mas acredito ter o potêncial e a persistência necessária para o aprendizado.",
         ParagraphThird: "Esta é uma primeira versão do meu portfolio virtual, enquanto planejo como melhorá-lo você é bem vindo(a) para visualizá-lo a vontade. De qualquer maneira, há links no rodapé desta página que podem ser úteis para ver mais coisas sobre mim, ou entrar em contato. 😁"

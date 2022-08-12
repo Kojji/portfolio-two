@@ -14,7 +14,7 @@ onUnmounted(() => window.removeEventListener('resize', onWidthChange))
     <FullScreenBanner />
     <div>
       <InfoMenu />
-      <router-view/>
+      <router-view class="global-class"/>
     </div>
   </div>
 </template>
@@ -33,5 +33,9 @@ onUnmounted(() => window.removeEventListener('resize', onWidthChange))
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.global-class{
+  min-height: 90vh;
 }
 </style>
