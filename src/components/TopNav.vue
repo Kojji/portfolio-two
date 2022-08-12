@@ -21,7 +21,7 @@ const language = detectLanguage() == 'pt' ? ref('Português') : ref('English');
         <div class="justify-self-end self-center">
           <Menu as="div" class="relative inline-block text-left">
             <div>
-              <MenuButton class="inline-flex rounded-full px-4 py-2 bg-lime-400 hover:bg-lime-500">
+              <MenuButton class="inline-flex rounded-full px-4 py-2 text-zinc-100 bg-amber-600 hover:bg-amber-700">
                 <span class="font-bold md:text-lg text-md">{{ language }}</span>
                 <ChevronDownIcon class="-mr-1 ml-2 h-5 w-5 self-center" aria-hidden="true" />
               </MenuButton>

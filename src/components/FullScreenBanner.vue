@@ -16,21 +16,38 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
       <div class="flex">
         <!-- <div class="bg-gray-600 h-screen"> -->
         <div v-if="windowWidth > 991.98" class="flex-1 h-screen">
-          <!-- <div class="info-grid">
-            <div class="background-image"><img alt="text-background" class="text-background" src="https://drive.google.com/uc?export=view&id=1OPsCZK9Zpbkfc3U0KY8Fzx0HyhH2jbrS" /></div>
-            <div class="text-content row">
-              <div class="col-9 offset-2">
-                <div class="main-text-slot"> -->
-                  <p>Fernando Koji Yamashiro</p>
-                  <!-- <p class="role-text text-size-2">{{$t('HomeBanner.Profession')}}</p>
-                </div>
-                <p class="py-3" style="font-weight: bold;">{{$t('HomeBanner.Text')}}</p>
-                <a href="mailto:fernandokojiyama@gmail.com" target="_blank">
-                  <button type="button" class="btn color-button">{{$t('HomeBanner.CallToAction')}}</button>
+          <div class="name-grid">
+            <div>
+              <div class="inline-flex mb-2">
+                <a href="https://wa.me/+5511934282440" target="_blank" class="mx-1 flex items-center w-10 h-10 rounded-full bg-amber-600 hover:bg-amber-700 place-content-center " style="color:white;">
+                  <font-awesome-icon icon="fa-brands fa-whatsapp" size="xl" />
+                </a>
+                <!-- <a href="mailto:fernandokojidev@gmail.com" target="_blank" class="mx-1 flex items-center w-10 h-10 rounded-full bg-amber-600 hover:bg-amber-700 place-content-center " style="color:white;">
+                  <font-awesome-icon icon="fa-solid fa-envelope" size="xl" />
+                </a> -->
+                <a href="https://github.com/Kojji" target="_blank" class="mx-1 flex items-center w-10 h-10 rounded-full bg-amber-600 hover:bg-amber-700 place-content-center " style="color:white;">
+                  <font-awesome-icon icon="fa-brands fa-github" size="xl" />
+                </a>
+                <a href="https://www.instagram.com/nandokoji/" target="_blank" class="mx-1 flex items-center w-10 h-10 rounded-full bg-amber-600 hover:bg-amber-700 place-content-center " style="color:white;">
+                  <font-awesome-icon icon="fa-brands fa-instagram" size="xl" />
+                </a>
+                <a href="https://www.linkedin.com/in/fernandokojiyama/" target="_blank" class="mx-1 flex items-center w-10 h-10 rounded-full bg-amber-600 hover:bg-amber-700 place-content-center " style="color:white;">
+                  <font-awesome-icon icon="fa-brands fa-linkedin" size="xl" />
+                </a>
+                <a href="https://codepen.io/kojji" target="_blank" class="mx-1 flex items-center w-10 h-10 rounded-full bg-amber-600 hover:bg-amber-700 place-content-center " style="color:white;">
+                  <font-awesome-icon icon="fa-brands fa-codepen" size="xl" />
                 </a>
               </div>
+              <h1 class="text-white font-bold text-5xl font-sans">FERNANDO KOJI</h1>
+              <p class="text-white font-semibold text-3xl">{{$t('HomeBanner.Profession')}}</p>
+              <a href="mailto:fernandokojdev@gmail.com" target="_blank">
+                <button type="button" class="flex items-center justify-center items-center mt-10 w-36 h-12 rounded-md bg-amber-600 font-semibold text-lg text-zinc-100 hover:bg-amber-700">
+                  <font-awesome-icon icon="fa-solid fa-envelope" size="md" />
+                  <p class="pl-2">{{ $t('HomeBanner.CallToAction') }}</p>
+                </button>
+              </a>
             </div>
-          </div> -->
+          </div>
         </div>
         <div class="flex-1 h-screen">
           <div class="info-grid">
@@ -73,9 +90,18 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
 .info-overlay{
   position: absolute;
 }
+.name-grid{
+  display: grid;
+  align-items: center;
+  justify-items: end;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
 .info-grid{
   display: grid;
   align-items: center;
+  justify-items: center;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   height: 100%;
