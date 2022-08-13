@@ -28,12 +28,12 @@ const selected = ref('ufgd')
   <div class="px-10 flex flex-col" id="big-education-card" >
     <h2 class="py-4 mx-auto font-bold lg:text-3xl text-2xl">{{$t('InfoCards.Education.PageTitle')}}</h2>
     <div class="inline-flex">
-      <div class="px-3 py-4 lg:w-96 w-64 h-min bg-purple-100 rounded drop-shadow-lg">
+      <div class="px-3 py-4 lg:w-96 w-72 h-min bg-purple-100 rounded-md drop-shadow-lg">
         <div v-for="(item, index) in educationItems" :key="index" class="my-3">
-          <div class="px-3 bg-gray-100 font-semibold text-lg uppercase">{{$t(`InfoCards.Education.Sections[${index}].value`)}}</div>
+          <div class="px-3 bg-gray-100 font-semibold xl:text-lg text-base rounded-t-md uppercase">{{$t(`InfoCards.Education.Sections[${index}].value`)}}</div>
           <div v-for="(subItem, subIndex) in item.items" :key="subIndex" >
             <a :href="'#' + subItem">
-              <button class="hover:bg-purple-400 hover:text-zinc-100 w-full flex items-center p-1 rounded-md font-semibold text-xl" :class="{ 'bg-purple-400 text-zinc-100' : selected == $t(`InfoCards.Education.Sections[${index}].items[${subIndex}].title`) }" @click="selected = $t(`InfoCards.Education.Sections[${index}].items[${subIndex}].title`)" >{{$t(`InfoCards.Education.Sections[${index}].items[${subIndex}].valueMenu`)}}</button>
+              <button class="hover:bg-purple-400 hover:text-zinc-100 w-full flex items-center p-1 rounded-md font-semibold text-lg" :class="{ 'bg-purple-400 text-zinc-100' : selected == $t(`InfoCards.Education.Sections[${index}].items[${subIndex}].title`) }" @click="selected = $t(`InfoCards.Education.Sections[${index}].items[${subIndex}].title`)" >{{$t(`InfoCards.Education.Sections[${index}].items[${subIndex}].valueMenu`)}}</button>
             </a>
           </div>
         </div>
