@@ -206,7 +206,7 @@ export default {
         ParagraphThird: "At the moment, this is the very first version of my online portfolio, while I plan on how to improve it, you're more than welcome to navigate through this page. Anyhow, with the links presented in the footer, you can either get to know me better or get in touch with me. 😁",
       },
       Skills: {
-        Title: "Skills",
+        PageTitle: "Skills",
         TextOne: "The objective of the card, on the left, is be a more straight display of my main skills, the reading of the beneath parts and the \"Experience\" section are complementary to each other, giving a little more understanding of my skill levels.",
         TextTwo: "In terms of API development, I've had professional experience using PHP with Cake PHP, but ever since that, I've been using Node.js with Express.js and AdonisJs, and sometimes typescript. Unfortunately, I'm not very familiar to automated testing, but I've acquired some other experiences, like using sockets; conteiners; cloud services like firebase, GCP and AWS; and creation of linux based web servers;",
         TextThree:  "For front end development, I'm more knowledgeable about Vue.js with Quasar and Vuetify. For this portfolio, I've learned the basic implementation of Bootstrap. As a result of my previous experiences, I've also learned vanilla HTML, Javascript and CSS.",
@@ -429,7 +429,7 @@ export default {
         ParagraphThird: "Esta é uma primeira versão do meu portfolio virtual, enquanto planejo como melhorá-lo você é bem vindo(a) para visualizá-lo a vontade. De qualquer maneira, há links no rodapé desta página que podem ser úteis para ver mais coisas sobre mim, ou entrar em contato. 😁"
       },
       Skills: {
-        Title: "Minhas Habilidades",
+        PageTitle: "Minhas Habilidades",
         TextOne: "O cartão ao lado tem o objetivo de gerar uma visão mais resumida e direta de meus conhecimentos principais, a leitura dos trechos abaixo e da seção de \"Experiência\" servem como um complemento, aprofundando um pouco mais sobre o nível de conhecimento e habilidades que tenho.",
         TextTwo: "Para o desenvolvimento de APIs, tive uma experiência profissional usando PHP com Cake PHP, porém, desde então venho usando Node.js com Express.js e AdonisJs, e também typescrypt. Infelizmente não tive muito contato com testes automatizados, mas adquiri conhecimentos de integração de sockets; uso de contêineres; uso de serviços cloud como firebase, google Cloud Platform e AWS; e levantamento de servidores web linux;",
         TextThree:  "No front end, meus conhecimentos rodam ao redor do Vue.js principalmente com Quasar e Vuetify, para este portfolio, adquiri um conhecimento básico de Bootstrap. Com a experiência no desenvolvimento front end também foram adquiridos conhecimentos de HTML, Javascript e CSS.",
