@@ -21,7 +21,7 @@ let educationItems = reactive([
   },
 ])
 
-const selected = ref('ufgd')
+const selected = ref('')
 </script>
 
 <template>
