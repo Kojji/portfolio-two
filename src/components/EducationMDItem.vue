@@ -1,5 +1,5 @@
 <script setup>
-import { inject, reactive } from 'vue'
+import { inject, reactive, ref } from 'vue'
 
 const $t = inject('$t');
 
@@ -21,14 +21,32 @@ let educationItems = reactive([
   },
 ])
 
+const selected = ref('ufgd')
 </script>
 
 <template>
-  <div>MD education</div>
-  <div v-for="(item, index) in educationItems" :key="index">
-    {{item}}
-    <div v-for="(subItem, subIndex) in item.items" :key="subIndex" >
-      {{subItem}}
+  <div class="px-10 flex flex-col" id="big-education-card" >
+    <h2 class="py-4 mx-auto font-bold lg:text-3xl text-2xl">{{$t('InfoCards.Education.PageTitle')}}</h2>
+    <div class="inline-flex">
+      <div class="px-3 py-4 lg:w-96 w-64 h-min bg-purple-100 rounded drop-shadow-lg">
+        <div v-for="(item, index) in educationItems" :key="index" class="my-3">
+          <div class="px-3 bg-gray-100 font-semibold text-lg uppercase">{{$t(`InfoCards.Education.Sections[${index}].value`)}}</div>
+          <div v-for="(subItem, subIndex) in item.items" :key="subIndex" >
+            <a :href="'#' + subItem">
+              <button class="hover:bg-purple-400 hover:text-zinc-100 w-full flex items-center p-1 rounded-md font-semibold text-xl" :class="{ 'bg-purple-400 text-zinc-100' : selected == $t(`InfoCards.Education.Sections[${index}].items[${subIndex}].title`) }" @click="selected = $t(`InfoCards.Education.Sections[${index}].items[${subIndex}].title`)" >{{$t(`InfoCards.Education.Sections[${index}].items[${subIndex}].valueMenu`)}}</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:px-10 px-5">
+        <div v-for="(item, index) in educationItems" :key="index">
+          <div class="px-3 bg-gray-100 font-semibold text-lg uppercase">{{$t(`InfoCards.Education.Sections[${index}].value`)}}</div>
+          <div v-for="(subItem, subIndex) in item.items" :key="subIndex" class="my-10">
+            <p :id="subItem" class="font-bold text-xl">{{$t(`InfoCards.Education.Sections[${index}].items[${subIndex}].valueLabel`)}}</p>
+            <p class="text-xl" >{{$t(`InfoCards.Education.Sections[${index}].items[${subIndex}].valueDescription`)}}</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

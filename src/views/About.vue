@@ -58,7 +58,7 @@ import photo from '/src/assets/images/photo.jpg'
   border-radius: 50%;
 }
 
-#personal-card{
+/* #personal-card{ */
   /* margin-bottom: var(--bottom-margin); */
-}
+/* } */
 </style>

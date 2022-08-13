@@ -9,7 +9,7 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
 
 <template>
   <div class="education">
-    <EducationMDItem v-if="windowWidth > 767.98" />
+    <EducationMDItem v-if="windowWidth > 1023.98" />
     <EducationSMItem v-else />
   </div>
 </template>

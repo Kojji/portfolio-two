@@ -24,11 +24,14 @@ let educationItems = reactive([
 </script>
 
 <template>
-  <div>SM education</div>
-  <div v-for="(item, index) in educationItems" :key="index">
-    {{item}}
-    <div v-for="(subItem, subIndex) in item.items" :key="subIndex" >
-      {{subItem}}
+  <div class="px-5 flex flex-col" id="small-education-card" >
+    <h2 class="py-4 mx-auto font-bold text-xl">{{$t('InfoCards.Education.PageTitle')}}</h2>
+    
+    <div v-for="(item, index) in educationItems" :key="index">
+      {{item.title}}
+      <div v-for="(subItem, subIndex) in item.items" :key="subIndex" >
+        {{subItem}}
+      </div>
     </div>
   </div>
 </template>

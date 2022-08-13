@@ -12,9 +12,9 @@ onUnmounted(() => window.removeEventListener('resize', onWidthChange))
 <template>
   <div id="app">
     <FullScreenBanner />
-    <div>
+    <div class="relative">
       <InfoMenu />
-      <router-view class="global-class"/>
+      <router-view class="global-class container mx-auto"/>
     </div>
   </div>
 </template>
