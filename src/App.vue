@@ -1,5 +1,6 @@
 <script setup>
 import FullScreenBanner from '/src/components/FullScreenBanner.vue'
+import FooterNav from '/src/components/Footer.vue'
 import InfoMenu from '/src/components/InfoMenu.vue'
 import { inject, onMounted, onUnmounted } from 'vue'
 
@@ -16,6 +17,7 @@ onUnmounted(() => window.removeEventListener('resize', onWidthChange))
       <InfoMenu />
       <router-view class="global-class container mx-auto"/>
     </div>
+    <FooterNav />
   </div>
 </template>
 
