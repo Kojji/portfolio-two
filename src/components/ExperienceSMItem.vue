@@ -45,7 +45,7 @@ let experienceItems = reactive([
       <div v-for="(item, index) in experienceItems" :key="index" class="mb-4">
         <div class="px-3 bg-gray-100 font-semibold rounded-md text-lg uppercase">{{$t(`InfoCards.Experience.Sections[${index}].value`)}}</div>
         <div v-for="(subItem, subIndex) in item.items" :key="subIndex" class="my-1">
-          <Disclosure v-slot="{ open }" :defaultOpen="subIndex === 0">
+          <Disclosure v-slot="{ open }" :defaultOpen="subIndex === 0 && index < 2">
             <DisclosureButton class="flex w-full justify-between rounded-t-md bg-purple-200 px-4 py-2 text-left hover:bg-purple-300">
               <span class="md:text-base text-sm font-bold">{{$t(`InfoCards.Experience.Sections[${index}].items[${subIndex}].valueLabel`)}}</span>
               <ChevronUpIcon

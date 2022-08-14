@@ -41,7 +41,7 @@ const skillIcons = [
         <div class="px-3 bg-gray-100 font-semibold xl:text-lg text-base rounded-t-md uppercase">{{$t('InfoCards.Skills.CardOne')}}</div>
         <div class="grid lg:grid-cols-2 grid-cols-1">
           <div :key="skill.name" v-for="skill of skillIcons">
-            <div class="p-3">
+            <div class="md:p-3">
               <p class="icon-text">{{skill.name}}</p>
               <img :src="skill.iconUrl" class="rounded" alt="...">
             </div>
