@@ -39,10 +39,10 @@ export default {
         "Anyways, you can email me with the button below. On the footer, I've left some links, that could help you to either, get in touch with me or get to know more things about me."
     },
     InfoCards: {
-      AnimationCard: {
-        Title: "My Animations",
+      Animation: {
+        PageTitle: "My Animations",
         NavMessage: "Press or keep the mouse over the image",
-        TextOne: "",
+        TextOne: "Aliquam eget velit ex. Cras vestibulum vestibulum consectetur. Donec ante tellus, accumsan euismod facilisis in, tempus nec metus. Maecenas at interdum leo. Cras egestas in nunc a congue. Praesent diam magna, bibendum sit amet orci et, sodales molestie dui. Sed nec tincidunt arcu. Praesent mi nisi, lobortis ut maximus ut, consequat nec leo. Nulla mattis erat eu ipsum congue imperdiet. Ut fringilla turpis urna, eget pharetra tortor dignissim ut. Aenean malesuada ipsum non lacus aliquam consequat. Proin et dictum sem. Nam sit amet tempor dolor.",
         TextTwo: "",
       },
       Education: {
@@ -255,10 +255,10 @@ export default {
         "Mas, qualquer coisa, é possível me enviar um email pelo botão abaixo. No rodapé da página há outros meios de comunicação e links externos que possam lhe interessar."
     },
     InfoCards: {
-      AnimationCard: {
-        Title: "Minhas Animações",
+      Animation: {
+        PageTitle: "Minhas Animações",
         NavMessage: "Pressione ou deixe o mouse na imagem",
-        TextOne: "",
+        TextOne: "Aliquam eget velit ex. Cras vestibulum vestibulum consectetur. Donec ante tellus, accumsan euismod facilisis in, tempus nec metus. Maecenas at interdum leo. Cras egestas in nunc a congue. Praesent diam magna, bibendum sit amet orci et, sodales molestie dui. Sed nec tincidunt arcu. Praesent mi nisi, lobortis ut maximus ut, consequat nec leo. Nulla mattis erat eu ipsum congue imperdiet. Ut fringilla turpis urna, eget pharetra tortor dignissim ut. Aenean malesuada ipsum non lacus aliquam consequat. Proin et dictum sem. Nam sit amet tempor dolor.",
         TextTwo: "",
       },
       Education: {
