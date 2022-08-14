@@ -143,5 +143,6 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
   background-image: url('/src/assets/images/hexagonBackground.png');
   background-repeat: no-repeat;
   background-color: #a855f7;
+  max-height: 1028px;
 }
 </style>

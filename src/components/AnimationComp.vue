@@ -22,7 +22,7 @@ function runAnimation() {
         delay: -8,
       }
     ],
-    stagger: windowWidth > 767.98 ? 0.1 : 0.2,
+    stagger: 0.2,
     delay: 1.5,
     onComplete: function() {
       this.restart(true, false)
@@ -46,7 +46,7 @@ function runAnimation() {
         delay: -8,
       }
     ],
-    stagger: windowWidth > 767.98 ? 0.1 : 0.2,
+    stagger: 0.2,
     delay: 1.5,
     onComplete: function() {
       this.restart(true, false)
@@ -54,10 +54,7 @@ function runAnimation() {
   })
 }
 
-let numberOfParticles = 8
-if(windowWidth > 768) {
-  numberOfParticles = 15
-}
+let numberOfParticles = 12
 
 onMounted(()=>{
   runAnimation()
