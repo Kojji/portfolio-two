@@ -1,5 +1,4 @@
 <script setup>
-import { Switch } from "@headlessui/vue";
 import { gsap } from "gsap";
 import { onMounted } from 'vue'
 import { ref, inject, computed } from 'vue'
@@ -9,7 +8,7 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
 
 let numberOfParticles = 10
 
-if(windowWidth > 768) {
+if(windowWidth > 767.98) {
   numberOfParticles = 30
 }
 

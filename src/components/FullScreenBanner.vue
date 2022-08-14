@@ -2,8 +2,6 @@
 import { ref, inject, computed } from 'vue'
 import TopNav from '/src/components/TopNav.vue'
 import AnimationComp from '/src/components/AnimationComp.vue'
-// import holeBack from '/src/assets/images/background-hole.png'
-import hexagon from '/src/assets/images/hexagon.png'
 const $store = inject('$store');
 
 let windowWidth = computed(() => $store.getters.getWindowWidth)
