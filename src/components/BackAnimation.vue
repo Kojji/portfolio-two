@@ -7,7 +7,7 @@ const $store = inject('$store');
 
 let windowWidth = computed(() => $store.getters.getWindowWidth)
 
-let numberOfParticles = 15
+let numberOfParticles = 10
 
 if(windowWidth > 768) {
   numberOfParticles = 30
@@ -19,7 +19,7 @@ function rerun(id) {
   gsap.to( "#" + id, {
     keyframes: [
       {
-        opacity: '50%', 
+        opacity: '40%', 
         scale: 'random(0.5, 1, 0.1)',
         duration: 2,
         yoyo: true,
@@ -50,10 +50,10 @@ onMounted(()=>{
     square.classList.add("rounded-lg")
     square.classList.add("w-32")
     square.classList.add("h-32")
-    let randomWidth = (Math.floor(Math.random() * 650)-50)/10 // random square spawn only on left and right, spawn from -5% to 105%
-    if(randomWidth > 18) randomWidth += 62 // avoid spawn at 19% to 81%
+    let randomWidth = (Math.floor(Math.random() * 1050)-50)/10 // random square spawn only on left and right, spawn from -5% to 105%
+    // if(randomWidth > 18) randomWidth += 62 // avoid spawn at 19% to 81%
 
-    let randomHeight = Math.floor((Math.random() * 1000))/10
+    let randomHeight = Math.floor((Math.random() * 350)-50)/10
     // randomHeight = randomHeight > 20 ? randomHeight + 60 : null
 
     

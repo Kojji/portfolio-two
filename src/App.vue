@@ -14,7 +14,7 @@ onUnmounted(() => window.removeEventListener('resize', onWidthChange))
 <template>
   <div id="app">
     <FullScreenBanner />
-    <div class="relative">
+    <div class="relative h-fit">
       <div class="absolute h-full w-full overflow-hidden -z-10">
         <BackAnimation/>
       </div>
