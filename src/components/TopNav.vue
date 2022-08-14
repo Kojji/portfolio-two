@@ -14,7 +14,7 @@ const language = detectLanguage() == 'pt' ? ref('Português') : ref('English');
 </script>
 
 <template>
-  <header class="topbar w-full">
+  <header class="w-full absolute z-50">
     <div class="mx-auto p-10">
       <div class="flex justify-between" style="min-height: 10vh;">
         <div class="justify-self-start self-center md:w-24 md:h-24 w-16 h-16"><img :src="logo" /></div>
@@ -47,7 +47,4 @@ const language = detectLanguage() == 'pt' ? ref('Português') : ref('English');
 </template>
 
 <style scoped>
-.topbar{
-  position: absolute;
-}
 </style>

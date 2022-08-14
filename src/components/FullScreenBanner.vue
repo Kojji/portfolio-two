@@ -1,6 +1,7 @@
 <script setup>
 import { ref, inject, computed } from 'vue'
-import TopNav from '/src/components/TopNav.vue';
+import TopNav from '/src/components/TopNav.vue'
+import AnimationComp from '/src/components/AnimationComp.vue'
 // import holeBack from '/src/assets/images/background-hole.png'
 import hexagon from '/src/assets/images/hexagon.png'
 const $store = inject('$store');
@@ -16,8 +17,8 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
       <div class="flex">
         <!-- <div class="bg-gray-600 h-screen"> -->
         <div v-if="windowWidth > 767.98" class="flex-1 h-screen">
-          <div class="name-grid">
-            <div>
+          <div class="h-full w-full flex flex-col justify-center items-end">
+            <div class="w-fit h-min">
               <div class="inline-flex mb-2">
                 <a href="https://wa.me/+5511934282440" target="_blank" class="mx-1 flex items-center w-10 h-10 rounded-full bg-amber-600 hover:bg-amber-700 place-content-center " style="color:white;">
                   <font-awesome-icon icon="fa-brands fa-whatsapp" size="xl" />
@@ -49,18 +50,40 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
             </div>
           </div>
         </div>
-        <div class="flex-1 h-screen">
-          <div class="info-grid">
-            
-            <!-- <div id="animation">
-              <div class="square" style="background: orange;"></div>
-              <div class="square" style="background: blue;"></div>
-              <div class="square" style="background: green;"></div>
-              <div ><img id="back-hole" :src="holeBack" /></div>
-              <div id="bottom-hole"></div>
-            </div> -->
-            {{$t('HomeBanner.CallToAction')}}
+        <div class="flex-1 h-screen relative">
+          <div v-if="windowWidth <= 768" class="h-full w-full flex flex-col justify-center items-start z-40 absolute">
+            <div class="w-fit h-min bg-purple-700 bg-opacity-50 p-5 rounded-md">
+              <h1 class="text-white font-bold text-4xl font-sans">FERNANDO KOJI</h1>
+              <p class="text-white font-semibold text-2xl">{{$t('HomeBanner.Profession')}}</p>
+              <div class="inline-flex my-2">
+                <a href="https://wa.me/+5511934282440" target="_blank" class="mx-1 flex items-center w-8 h-8 rounded-full bg-amber-600 place-content-center " style="color:white;">
+                  <font-awesome-icon icon="fa-brands fa-whatsapp" size="lg" />
+                </a>
+                <a href="mailto:fernandokojidev@gmail.com" target="_blank" class="mx-1 flex items-center w-8 h-8 rounded-full bg-amber-600 place-content-center " style="color:white;">
+                  <font-awesome-icon icon="fa-solid fa-envelope" size="lg" />
+                </a>
+                <a href="https://github.com/Kojji" target="_blank" class="mx-1 flex items-center w-8 h-8 rounded-full bg-amber-600 place-content-center " style="color:white;">
+                  <font-awesome-icon icon="fa-brands fa-github" size="lg" />
+                </a>
+                <a href="https://www.instagram.com/nandokoji/" target="_blank" class="mx-1 flex items-center w-8 h-8 rounded-full bg-amber-600 place-content-center " style="color:white;">
+                  <font-awesome-icon icon="fa-brands fa-instagram" size="lg" />
+                </a>
+                <a href="https://www.linkedin.com/in/fernandokojiyama/" target="_blank" class="mx-1 flex items-center w-8 h-8 rounded-full bg-amber-600 place-content-center " style="color:white;">
+                  <font-awesome-icon icon="fa-brands fa-linkedin" size="lg" />
+                </a>
+                <a href="https://codepen.io/kojji" target="_blank" class="mx-1 flex items-center w-8 h-8 rounded-full bg-amber-600 place-content-center " style="color:white;">
+                  <font-awesome-icon icon="fa-brands fa-codepen" size="lg" />
+                </a>
+              </div>
+              <!-- <a href="mailto:fernandokojdev@gmail.com" target="_blank">
+                <button type="button" class="flex items-center drop-shadow-xl justify-center items-center mt-10 w-36 h-12 rounded-md bg-amber-600 font-semibold text-lg text-zinc-100 hover:bg-amber-700">
+                  <font-awesome-icon icon="fa-solid fa-envelope" />
+                  <p class="pl-2">{{ $t('HomeBanner.CallToAction') }}</p>
+                </button>
+              </a> -->
+            </div>
           </div>
+          <AnimationComp />
         </div>
       </div>
     </div>
@@ -74,22 +97,15 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
 .info-overlay{
   position: absolute;
 }
-.name-grid{
+/* .name-grid{
   display: grid;
   align-items: center;
-  justify-items: end;
+  justify-items: start;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   height: 100%;
-}
-.info-grid{
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-  height: 100%;
-}
+  z-index: 99;
+} */
 .square {
   position: absolute;
   left: 0;
