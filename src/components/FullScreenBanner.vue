@@ -14,9 +14,9 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
   <section id="hexagon-background" class="md:bg-contain bg-cover bg-center w-full" style="overflow:hidden; z-index:2;">
     <!-- <div class="max-w-7xl mx-auto px-3"> -->
     <div class="mx-auto px-5">
-      <div class="flex">
+      <div class="grid grid-cols-5 grid-flow-col">
         <!-- <div class="bg-gray-600 h-screen"> -->
-        <div v-if="windowWidth > 767.98" class="flex-1 h-screen">
+        <div v-if="windowWidth > 767.98" class="col-span-2 h-screen">
           <div class="h-full w-full flex flex-col justify-center items-end">
             <div class="w-fit h-min">
               <div class="inline-flex mb-2">
@@ -39,18 +39,18 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
                   <font-awesome-icon icon="fa-brands fa-codepen" size="xl" />
                 </a>
               </div>
-              <h1 class="text-white font-bold text-5xl font-sans">FERNANDO KOJI</h1>
-              <p class="text-white font-semibold text-3xl">{{$t('HomeBanner.Profession')}}</p>
+              <h1 class="text-white font-bold xl:text-5xl text-4xl font-sans">FERNANDO KOJI</h1>
+              <p class="text-white font-semibold xl:text-3xl text-2xl">{{$t('HomeBanner.Profession')}}</p>
               <a href="mailto:fernandokojdev@gmail.com" target="_blank">
-                <button type="button" class="flex items-center drop-shadow-xl justify-center items-center mt-10 w-36 h-12 rounded-md bg-amber-600 font-semibold text-lg text-zinc-100 hover:bg-amber-700">
+                <button type="button" class="flex items-center drop-shadow-xl justify-center items-center mt-10 xl:w-36 w-32 xl:h-12 h-10  rounded-md bg-amber-600 font-semibold text-lg text-zinc-100 hover:bg-amber-700">
                   <font-awesome-icon icon="fa-solid fa-envelope" />
-                  <p class="pl-2">{{ $t('HomeBanner.CallToAction') }}</p>
+                  <p class="pl-2 xl:text-base text-sm">{{ $t('HomeBanner.CallToAction') }}</p>
                 </button>
               </a>
             </div>
           </div>
         </div>
-        <div class="flex-1 h-screen relative">
+        <div class="md:col-span-3 col-span-5 h-screen relative">
           <div v-if="windowWidth <= 768" class="h-full w-full flex flex-col justify-center items-start z-40 absolute">
             <div class="w-fit h-min bg-purple-700 bg-opacity-50 p-5 rounded-md">
               <h1 class="text-white font-bold text-4xl font-sans">FERNANDO KOJI</h1>
