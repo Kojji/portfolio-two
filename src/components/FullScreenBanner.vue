@@ -11,7 +11,7 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
   <TopNav />
   <section id="hexagon-background" class="md:bg-contain bg-cover bg-center w-full" style="overflow:hidden; z-index:2;">
     <!-- <div class="max-w-7xl mx-auto px-3"> -->
-    <div class="mx-auto px-5">
+    <div class="mx-auto px-5 container">
       <div class="grid grid-cols-5 grid-flow-col">
         <!-- <div class="bg-gray-600 h-screen"> -->
         <div v-if="windowWidth > 767.98" class="col-span-2 h-screen">
