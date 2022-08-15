@@ -2,6 +2,9 @@
 import beachWavesVideo from "/src/assets/videos/shortVer.mp4"
 import cityLightsVideo from "/src/assets/videos/city_lights.mp4"
 import surfingPikachu from "/src/assets/videos/surfing.mp4"
+import octopiano from "/src/assets/videos/octopiano.mp4"
+import squares from "/src/assets/videos/squares.mp4"
+import rotating from "/src/assets/videos/rotating.mp4"
 
 function playOnHover(element) {
   element[0].play()
@@ -20,22 +23,40 @@ function iconDisappear(iconId) {
 
 const animations = [
   {
+    name: 'Octopiano',
+    component: octopiano,
+    reference: 'octopianoVid',
+    link: 'https://codepen.io/kojji/full/abVxxOQ',
+  },
+  {
     name: 'Surfing Pikachu',
     component: surfingPikachu,
     reference: 'surfingPikachuVid',
     link: 'https://codepen.io/kojji/full/poaYvVL',
   },
   {
+    name: 'GSAP outlines rotation',
+    component: rotating,
+    reference: 'rotatingVid',
+    link: 'https://codepen.io/kojji/full/LYdgmdg',
+  },
+  {
+    name: 'GSAP Rotating Squares',
+    component: squares,
+    reference: 'squaresVid',
+    link: 'https://codepen.io/kojji/full/poLxrMW',
+  },
+  {
     name: 'Beach Waves',
     component: beachWavesVideo,
     reference: 'beachVid',
-    link: 'https://codepen.io/kojji/pen/QWOJJGQ',
+    link: 'https://codepen.io/kojji/full/QWOJJGQ',
   },
   {
     name: 'City Lights',
     component: cityLightsVideo,
     reference: 'cityLightsVid',
-    link: 'https://codepen.io/kojji/pen/zYPyPJV',
+    link: 'https://codepen.io/kojji/full/zYPyPJV',
   }
 ]
 
@@ -50,6 +71,7 @@ const animations = [
       </div>
     </div>
     <div class="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-3 md:gap-2 gap-1">
+    <!-- <div class="w-full lg:columns-3 md:columns-2 columns-1 lg:gap-3 md:gap-2 gap-1"> -->
       <div v-for="videos in animations" :key="videos.name" class="rounded-md bg-purple-100 h-min p-2">
         <a :href="videos.link" target="_blank"><span class="font-semibold text-lg hover:text-amber-500" @mouseover="iconAppear(`${videos.reference}Icon`)" @mouseleave="iconDisappear(`${videos.reference}Icon`)">{{videos.name}} <font-awesome-icon :id="`${videos.reference}Icon`" class="invisible" icon="fa-solid fa-arrow-up-right-from-square"/></span></a>
         <video @mouseover="playOnHover($refs[videos.reference])" @mouseleave="pauseOnLeave($refs[videos.reference])" :ref="videos.reference" muted="muted">

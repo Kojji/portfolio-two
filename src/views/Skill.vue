@@ -1,4 +1,5 @@
 <script setup>
+import awsLogo from '/src/assets/images/amazon-web-services-logo.png'
 const skillIcons = [
   {
     name: "Node.js",
@@ -17,7 +18,7 @@ const skillIcons = [
   },
   {
     name: "AWS",
-    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+    iconUrl: awsLogo,
     alt: "amazon web services icon"
   },
   {
@@ -39,7 +40,7 @@ const skillIcons = [
     <div class="inline-flex">
       <div class="px-3 py-4 lg:w-1/4 w-1/3 h-min bg-purple-100 rounded-md drop-shadow-lg">
         <div class="px-3 bg-gray-100 font-semibold xl:text-lg text-base rounded-t-md uppercase">{{$t('InfoCards.Skills.CardOne')}}</div>
-        <div class="grid lg:grid-cols-2 grid-cols-1">
+        <div class="grid lg:grid-cols-2 grid-cols-1 items-center">
           <div :key="skill.name" v-for="skill of skillIcons">
             <div class="md:p-3 my-2">
               <img :src="skill.iconUrl" class="rounded" alt="...">
