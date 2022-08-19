@@ -1,11 +1,8 @@
-# Vue 3 + Vite
+# My portfolio 2
 
-This template should help get you started developing with Vue 3 in Vite. This template uses Vue 3 with some other out-of-the-box configs.
-
-Just clone and 
-```
-npm install
-```
+This project consists of the code for my personal page, its second version, made with Vue 3 and tailwind. It is deployed on [fernandokoji.dev](https://fernandokoji.dev/).
+You can run it locally if you want by cloning and running _npm install_.
+The template for project was cloned from my other project [vue-project-template](https://github.com/Kojji/vue-project-template), which has uses the contents below.
 
 | Contents       |
 | -------------- |
@@ -14,3 +11,5 @@ npm install
 | Vue Router     |
 | Vuex           |
 | Cypress        |
+
+Due to the simplicity of this project, Cypress was not used, and to comply with my needs, i18n, headlessui and GSAP were set up separetly from the initial template.  
