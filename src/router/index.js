@@ -39,6 +39,10 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "skill" */ '../views/Skill.vue')
     }
+  },
+  { 
+    path: '/:pathMatch(.*)*',
+    redirect: '/'
   }
 ]
 
