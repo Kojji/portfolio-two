@@ -54,7 +54,7 @@ let experienceItems = reactive([
               />
             </DisclosureButton>
             <DisclosurePanel class="px-4 pt-2 pb-4 bg-purple-100 rounded-b-md">
-              <span class="md:text-base text-sm font-semibold text-gray-700">{{$t(`InfoCards.Experience.Sections[${index}].items[${subIndex}].valueDescription`)}}</span>
+              <span class="md:text-base text-sm font-semibold text-gray-700" v-html="$t(`InfoCards.Experience.Sections[${index}].items[${subIndex}].valueDescription`)"></span>
             </DisclosurePanel>
           </Disclosure>
         </div>

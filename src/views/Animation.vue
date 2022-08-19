@@ -73,7 +73,7 @@ const animations = [
     <div class="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-3 md:gap-2 gap-1">
     <!-- <div class="w-full lg:columns-3 md:columns-2 columns-1 lg:gap-3 md:gap-2 gap-1"> -->
       <div v-for="videos in animations" :key="videos.name" class="rounded-md bg-purple-100 h-min p-2">
-        <a :href="videos.link" target="_blank"><span class="font-semibold text-lg hover:text-amber-500" @mouseover="iconAppear(`${videos.reference}Icon`)" @mouseleave="iconDisappear(`${videos.reference}Icon`)">{{videos.name}} <font-awesome-icon :id="`${videos.reference}Icon`" class="invisible" icon="fa-solid fa-arrow-up-right-from-square"/></span></a>
+        <a :href="videos.link" target="_blank"><span class="font-semibold text-lg hover:text-blue-600" @mouseover="iconAppear(`${videos.reference}Icon`)" @mouseleave="iconDisappear(`${videos.reference}Icon`)">{{videos.name}} <font-awesome-icon :id="`${videos.reference}Icon`" class="invisible" icon="fa-solid fa-arrow-up-right-from-square"/></span></a>
         <video @mouseover="playOnHover($refs[videos.reference])" @mouseleave="pauseOnLeave($refs[videos.reference])" :ref="videos.reference" muted="muted">
           <source :src="videos.component" type="video/mp4">
         </video>

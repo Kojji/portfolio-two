@@ -43,7 +43,7 @@ const selected = ref('')
           <div class="px-3 bg-gray-100 font-semibold text-lg uppercase">{{$t(`InfoCards.Education.Sections[${index}].value`)}}</div>
           <div v-for="(subItem, subIndex) in item.items" :key="subIndex" class="my-10">
             <p :id="subItem" class="font-bold text-xl">{{$t(`InfoCards.Education.Sections[${index}].items[${subIndex}].valueLabel`)}}</p>
-            <p class="text-xl" >{{$t(`InfoCards.Education.Sections[${index}].items[${subIndex}].valueDescription`)}}</p>
+            <p class="text-xl" v-html="$t(`InfoCards.Education.Sections[${index}].items[${subIndex}].valueDescription`)"></p>
           </div>
         </div>
       </div>

@@ -7,6 +7,9 @@ const $store = inject('$store');
 let windowWidth = computed(() => $store.getters.getWindowWidth)
 
 function runAnimation() {
+  gsap.set(".elipse", {
+    opacity: 0.5
+  })
   gsap.to(".elipse", {
     keyframes: [
       {
@@ -15,6 +18,7 @@ function runAnimation() {
         duration: 8,
       },
       {
+        opacity: 1,
         borderColor: 'orange',
         duration: 4,
         yoyo: true,
@@ -30,6 +34,7 @@ function runAnimation() {
   })
   
   gsap.set(".square", {
+    opacity: 0.5,
     y: '70%'
   })
   gsap.to(".square", {
@@ -39,6 +44,7 @@ function runAnimation() {
         duration: 8,
       },
       {
+        opacity: 1,
         borderColor: 'orange',
         duration: 4,
         yoyo: true,
@@ -74,6 +80,7 @@ onMounted(()=>{
 *{transform-style: preserve-3d;}
 
 #animationLines{
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
