@@ -7,60 +7,12 @@ const $store = inject('$store');
 let windowWidth = computed(() => $store.getters.getWindowWidth)
 
 function runAnimation() {
-  gsap.set(".elipse", {
-    opacity: 0.5
-  })
-  gsap.to(".elipse", {
-    keyframes: [
-      {
-        rotationZ: 1440,
-        rotationY: 1440,
-        duration: 8,
-      },
-      {
-        opacity: 1,
-        borderColor: 'orange',
-        duration: 4,
-        yoyo: true,
-        repeat: 1,
-        delay: -8,
-      }
-    ],
-    stagger: 0.2,
-    delay: 1.5,
-    onComplete: function() {
-      this.restart(true, false)
-    }
-  })
-  
-  gsap.set(".square", {
-    opacity: 0.5,
-    y: '70%'
-  })
-  gsap.to(".square", {
-    keyframes: [
-      {
-        rotationY: 1440,
-        duration: 8,
-      },
-      {
-        opacity: 1,
-        borderColor: 'orange',
-        duration: 4,
-        yoyo: true,
-        repeat: 1,
-        delay: -8,
-      }
-    ],
-    stagger: 0.2,
-    delay: 1.5,
-    onComplete: function() {
-      this.restart(true, false)
-    }
-  })
-}
+  var tl = gsap.timeline({repeat: -1, repeatDelay: 0.5});
+  tl.to('.kirby',0.5,{repeat:3,backgroundPosition: "-2048px",ease:"steps(4)"});
+  // tl.to('.kirby',0.5,{repeat:2,backgroundPosition: "-2048px",ease:"steps(4)", delay:1.0});
 
-let numberOfParticles = 12
+  tl.play()
+}
 
 onMounted(()=>{
   runAnimation()
@@ -70,37 +22,52 @@ onMounted(()=>{
 
 <template>
   <div id="animationLines" class="z-30 relative w-full h-full">
-    <div v-for="(line, index) in numberOfParticles" :key="index" class="square md:w-96 md:h-96 w-72 h-72"></div>
-    <div v-for="(line, index) in numberOfParticles" :key="index" class="elipse md:w-96 md:h-96 w-72 h-72"></div>
+    <div class="circle-background sizing" style="width: 512px; height: 512px;"></div>
+    <div class="kirby sizing" style="width: 512px; height: 512px;"></div>
   </div>
 </template>
 
 <style scoped>
 
-*{transform-style: preserve-3d;}
+@media (max-width: 575.98px) {
+  .sizing{
+    transform: scale(0.8)
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .sizing{
+    transform: scale(1)
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+  .sizing{
+    transform: scale(1.2)
+  }
+}
+@media (min-width: 992px) {
+  .sizing{
+    transform: scale(1.4)
+  }
+}
 
 #animationLines{
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   display: flex;
   align-items: center;
   justify-content: center;
-  perspective: calc(var(--base-size) * 2);
 }
 
-.elipse{
+.kirby {
+  background: url(https://drive.google.com/uc?export=view&id=1rsvyOC4Kf8MpstZOx-YX-Vp7-l432SSZ);
   position: absolute;
+}
+
+.circle-background{
+  border: white solid 8px;
+  background-color: rgb(243, 178, 152);
   border-radius: 50%;
-  border: solid calc(var(--base-size)/16) white;
-  transform: rotateX(60deg) translateY(-60%);
-  opacity: 70%;
-}
-
-.square{
-  position: absolute;
-  border-radius: 20%;
-  border: solid calc(var(--base-size)/16) white;
-  transform: rotateX(60deg) translateY(-50%);
-  opacity: 70%;
+  transform: skew(15deg, 30deg);
 }
 
 </style>

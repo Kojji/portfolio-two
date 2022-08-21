@@ -49,7 +49,7 @@ let windowWidth = computed(() => $store.getters.getWindowWidth)
           </div>
         </div>
         <div class="md:col-span-3 col-span-5 h-screen relative">
-          <div v-if="windowWidth <= 768" class="h-full w-full flex flex-col justify-center items-start z-40 absolute">
+          <div v-if="windowWidth <= 768" class="h-full w-full flex flex-col justify-end items-start z-40 absolute pb-10">
             <div class="w-fit h-min bg-purple-700 bg-opacity-50 p-5 rounded-md">
               <h1 class="text-white font-bold text-4xl font-sans">FERNANDO KOJI</h1>
               <p class="text-white font-semibold text-2xl">{{$t('HomeBanner.Profession')}}</p>

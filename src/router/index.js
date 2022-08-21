@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Skill from '/src/views/Skill.vue'
 
 const routes = [
   // {
@@ -36,9 +37,7 @@ const routes = [
   {
     path: '/skill',
     name: 'Skill',
-    component: function () {
-      return import(/* webpackChunkName: "skill" */ '../views/Skill.vue')
-    }
+    component: Skill
   },
   { 
     path: '/:pathMatch(.*)*',
