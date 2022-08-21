@@ -15,7 +15,7 @@ let windowWidth = computed(() => store.getters.getWindowWidth)
     <div class="mx-auto px-5 container">
       <div class="grid grid-cols-5 grid-flow-col">
         <!-- <div class="bg-gray-600 h-screen"> -->
-        <div v-if="windowWidth > 767.98" class="col-span-2 h-screen">
+        <div v-if="windowWidth > 767.98" class="col-span-2 h-screen z-40">
           <div class="h-full w-full flex flex-col justify-center items-end">
             <div class="w-fit h-min">
               <div class="inline-flex mb-2">

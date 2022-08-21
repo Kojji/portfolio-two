@@ -42,9 +42,14 @@ onMounted(()=>{
     transform: scale(1.2)
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1279.98px){
   .sizing{
     transform: scale(1.4)
+  }
+}
+@media (min-width: 1280px) {
+  .sizing{
+    transform: scale(1.6)
   }
 }
 
