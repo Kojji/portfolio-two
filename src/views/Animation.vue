@@ -5,6 +5,7 @@ import surfingPikachu from "/src/assets/videos/surfing.mp4"
 import octopiano from "/src/assets/videos/octopiano.mp4"
 import squares from "/src/assets/videos/squares.mp4"
 import rotating from "/src/assets/videos/rotating.mp4"
+import cookingKirby from "/src/assets/videos/cookingKirby.mp4"
 
 function playOnHover(element) {
   element[0].play()
@@ -22,6 +23,12 @@ function iconDisappear(iconId) {
 }
 
 const animations = [
+  {
+    name: 'Cooking Kirby',
+    component: cookingKirby,
+    reference: 'kirbyVid',
+    link: 'https://codepen.io/kojji/full/LYdqqjr',
+  },
   {
     name: 'Octopiano',
     component: octopiano,
