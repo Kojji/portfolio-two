@@ -25,6 +25,5 @@ const i18n = createI18n({
 const app = createApp(App).use(i18n).use(store).use(router)
 app.provide('$i18n', app.config.globalProperties.$i18n)
 app.provide('$t', app.config.globalProperties.$t)
-app.provide('$store', app.config.globalProperties.$store)
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.mount('#app')

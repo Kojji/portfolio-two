@@ -2,9 +2,10 @@
 import { inject, computed } from 'vue'
 import ExperienceMDItem from '/src/components/ExperienceMDItem.vue';
 import ExperienceSMItem from '/src/components/ExperienceSMItem.vue';
-const $store = inject('$store');
+import { useStore } from 'vuex';
+const store = useStore();
 
-let windowWidth = computed(() => $store.getters.getWindowWidth)
+let windowWidth = computed(() => store.getters.getWindowWidth)
 </script>
 
 <template>

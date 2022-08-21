@@ -1,10 +1,7 @@
 <script setup>
 import { gsap } from "gsap";
 import { onMounted } from 'vue'
-import { inject, computed } from 'vue'
-const $store = inject('$store');
-
-let windowWidth = computed(() => $store.getters.getWindowWidth)
+import { computed } from 'vue'
 
 function runAnimation() {
   var tl = gsap.timeline({repeat: -1, repeatDelay: 0.5});
@@ -64,7 +61,7 @@ onMounted(()=>{
 }
 
 .circle-background{
-  border: white solid 8px;
+  border: darkorange solid 8px;
   background-color: rgb(243, 178, 152);
   border-radius: 50%;
   transform: skew(15deg, 30deg);

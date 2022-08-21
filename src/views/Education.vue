@@ -2,9 +2,10 @@
 import { inject, computed } from 'vue'
 import EducationMDItem from '/src/components/EducationMDItem.vue';
 import EducationSMItem from '/src/components/EducationSMItem.vue';
-const $store = inject('$store');
+import { useStore } from 'vuex';
+const store = useStore();
 
-let windowWidth = computed(() => $store.getters.getWindowWidth)
+let windowWidth = computed(() => store.getters.getWindowWidth)
 </script>
 
 <template>

@@ -1,13 +1,17 @@
 import { createStore } from 'vuex'
-import login from './modules/login'
+import menu from './modules/menu'
 
 export default createStore({
   state: {
-    windowWidth: 0
+    windowWidth: 0,
+    selectedItem: 'about'
   },
   mutations: {
     setWindowWidth(state, value) {
       state.windowWidth = value
+    },
+    setSelectedItem(state, value) {
+      state.selectedItem = value
     }
   },
   actions: {
@@ -15,9 +19,12 @@ export default createStore({
   getters: {
     getWindowWidth(state) {
       return state.windowWidth
+    },
+    getSelectedItem(state) {
+      return state.selectedItem
     }
   },
   modules: {
-    login
+    menu
   }
 })

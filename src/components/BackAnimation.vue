@@ -1,10 +1,11 @@
 <script setup>
 import { gsap } from "gsap";
 import { onMounted } from 'vue'
-import { ref, inject, computed } from 'vue'
-const $store = inject('$store');
+import { computed } from 'vue'
+import { useStore } from 'vuex';
+const store = useStore();
 
-let windowWidth = computed(() => $store.getters.getWindowWidth)
+let windowWidth = computed(() => store.getters.getWindowWidth)
 
 let numberOfParticles = 10
 

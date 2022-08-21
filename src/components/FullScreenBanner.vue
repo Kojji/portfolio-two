@@ -1,10 +1,11 @@
 <script setup>
-import { ref, inject, computed } from 'vue'
+import {  computed } from 'vue'
+import { useStore } from 'vuex';
 import TopNav from '/src/components/TopNav.vue'
 import AnimationComp from '/src/components/AnimationComp.vue'
-const $store = inject('$store');
+const store = useStore();
 
-let windowWidth = computed(() => $store.getters.getWindowWidth)
+let windowWidth = computed(() => store.getters.getWindowWidth)
 </script>
 
 <template>

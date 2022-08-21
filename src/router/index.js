@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Skill from '/src/views/Skill.vue'
+// import Skill from '/src/views/Skill.vue'
 
 const routes = [
   // {
@@ -8,37 +8,37 @@ const routes = [
   // },
   {
     path: '/',
-    name: 'About',
+    name: 'Home',
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/About.vue')
     }
   },
-  {
-    path: '/animation',
-    name: 'Animation',
-    component: function () {
-      return import(/* webpackChunkName: "animation" */ '../views/Animation.vue')
-    }
-  },
-  {
-    path: '/education',
-    name: 'Education',
-    component: function () {
-      return import(/* webpackChunkName: "education" */ '../views/Education.vue')
-    }
-  },
-  {
-    path: '/experience',
-    name: 'Experience',
-    component: function () {
-      return import(/* webpackChunkName: "experience" */ '../views/Experience.vue')
-    }
-  },
-  {
-    path: '/skill',
-    name: 'Skill',
-    component: Skill
-  },
+  // {
+  //   path: '/animation',
+  //   name: 'Animation',
+  //   component: function () {
+  //     return import(/* webpackChunkName: "animation" */ '../views/Animation.vue')
+  //   }
+  // },
+  // {
+  //   path: '/education',
+  //   name: 'Education',
+  //   component: function () {
+  //     return import(/* webpackChunkName: "education" */ '../views/Education.vue')
+  //   }
+  // },
+  // {
+  //   path: '/experience',
+  //   name: 'Experience',
+  //   component: function () {
+  //     return import(/* webpackChunkName: "experience" */ '../views/Experience.vue')
+  //   }
+  // },
+  // {
+  //   path: '/skill',
+  //   name: 'Skill',
+  //   component: Skill
+  // },
   { 
     path: '/:pathMatch(.*)*',
     redirect: '/'
