@@ -34,6 +34,7 @@ export default {
     ],
     HomeBanner: {
       CallToAction: "Contact Me",
+      CallToActionResume: "Resume",
       Profession: "Web Developer",
       // Text: "Welcome to my online portfolio. In this page, there are a considerable amount of information about me, my skills and professional experiences. " +
       //   "Anyways, you can email me with the button below. On the footer, I've left some links, that could help you to either, get in touch with me or get to know more things about me."
@@ -102,8 +103,8 @@ export default {
               {
                 title: "mutant",
                 valueMenu: "2022 - Mutant & Vivo",
-                valueLabel: "May. 2022 ~ Now - [Junior Development Analyst] Mutant - Vivo",
-                valueDescription: "Employed by Mutant, I am allocated to work for Vivo. The job consists of <b>development and maintenance of the use case dialogs</b> for Aura, the company's AI, in the context of customer service via WhatsApp. At the moment, I'm deepening my <b>knowledge of Agile Methodologies, typescript, use of javascript classes and npm packages development</b>."
+                valueLabel: "May. 2022 ~ Sep. 2022 - [Junior Development Analyst] Mutant - Vivo",
+                valueDescription: "Employed by Mutant, I was allocated to work for Vivo. The job consisted of the <b>development and maintenance of use case dialogs</b> for Aura, the company's AI, in the context of customer service via WhatsApp. I deepened my <b>knowledge of Agile Methodologies, typescript, use of javascript classes and npm packages development</b>."
               },
               {
                 title: "rifaisso",
@@ -198,7 +199,7 @@ export default {
       },
       Personal: {
         PageTitle: "About Me",
-        ParagraphFirst: "Hi, I'm Fernando. Graduated in Computer Engeneering, I'm a web developer. Working mostly as a back end developer. " + 
+        ParagraphFirst: "Hi, I'm Fernando. Graduated in Computer Engineering, I'm a web developer. Working mostly as a back end developer. " + 
           "I've already worked as a full stack web developer and, in some other projects, either in front end or back end development, which can be seen on the <b>\"Experience\"</b> tab. " + 
           "My main development stack is composed of Vue.js, Node.js and Typescript, but I've acquired knowledge in other concepts and technologies. To read a more detailed description of what I know, you can go straight to the <b>\"Skills\"</b> tab.",
         ParagraphSecond: "In terms of web development, my biggest interests are <b>API development and CSS/JS animations</b>. Sadly, I still don't have the skillset to completely make the animations I envision. But one day I'll get there. " +
@@ -250,6 +251,7 @@ export default {
     ],
     HomeBanner: {
       CallToAction: "Contate me",
+      CallToActionResume: "Curriculo",
       Profession: "Desenvolvedor Web",
       // Text: "Bem vindo(a) ao meu portfolio online. Acredito que nesta página tenha uma boa quantidade de informações sobre mim, minhas competências e experiências. " + 
       //   "Mas, qualquer coisa, é possível me enviar um email pelo botão abaixo. No rodapé da página há outros meios de comunicação e links externos que possam lhe interessar."
@@ -325,8 +327,8 @@ export default {
               {
                 title: "mutant",
                 valueMenu: "2022 - Mutant & Vivo",
-                valueLabel: "Mai. 2022 ~ Atual - [Analista de Desenvolvimento Jr.] Mutant - Vivo",
-                valueDescription: "Empregado pela Mutant, fui alocado para trabalhar na Vivo. O serviço prestado, consiste principalmente do <b>desenvolvimento e manutenção de diálogos de casos de uso</b> para a Inteligência Artificial Aura, da Vivo, para atendimento via WhatsApp. No momento, <b>estão sendo aprofundados conhecimentos de uso de classes no javascript, metodologias ágeis, typescript e criação de pacotes npm</b>."
+                valueLabel: "Mai. 2022 ~ Set. 2022 - [Analista de Desenvolvimento Jr.] Mutant - Vivo",
+                valueDescription: "Empregado pela Mutant, fui alocado para trabalhar na Vivo. O serviço prestado, consistiu principalmente do <b>desenvolvimento e manutenção de diálogos de casos de uso</b> para a Inteligência Artificial Aura, da Vivo, para atendimento via WhatsApp. <b>Foram aprofundados conhecimentos de uso de classes no javascript, metodologias ágeis, typescript e criação de pacotes npm</b>."
               },
               {
                 title: "rifaisso",

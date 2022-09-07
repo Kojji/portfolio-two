@@ -8,10 +8,10 @@ import messages from '/src/assets/i18n'
 import detectLanguage from "/src/assets/languageDetect"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faEnvelope, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faArrowUpRightFromSquare, faDownload } from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp, faGithub, faInstagram, faLinkedin, faCodepen } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faEnvelope, faWhatsapp, faGithub, faInstagram, faLinkedin, faCodepen,faArrowUpRightFromSquare )
+library.add( faEnvelope, faWhatsapp, faGithub, faInstagram, faLinkedin, faCodepen, faArrowUpRightFromSquare, faDownload )
 
 const i18n = createI18n({
   legacy: false,

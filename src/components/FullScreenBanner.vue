@@ -3,6 +3,8 @@ import {  computed } from 'vue'
 import { useStore } from 'vuex';
 import TopNav from '/src/components/TopNav.vue'
 import AnimationComp from '/src/components/AnimationComp.vue'
+import Curriculo from '/src/assets/Curriculo.pdf'
+import Resume from '/src/assets/Resume.pdf'
 const store = useStore();
 
 let windowWidth = computed(() => store.getters.getWindowWidth)
@@ -40,12 +42,20 @@ let windowWidth = computed(() => store.getters.getWindowWidth)
               </div>
               <h1 class="text-white font-bold xl:text-5xl text-4xl font-sans">FERNANDO KOJI</h1>
               <p class="text-white font-semibold xl:text-3xl text-2xl">{{$t('HomeBanner.Profession')}}</p>
-              <a href="mailto:fernandokojdev@gmail.com" target="_blank">
-                <button type="button" class="flex items-center drop-shadow-xl justify-center items-center mt-10 xl:w-36 w-32 xl:h-12 h-10  rounded-md bg-amber-600 font-semibold text-lg text-zinc-100 hover:bg-amber-700">
-                  <font-awesome-icon icon="fa-solid fa-envelope" />
-                  <p class="pl-2 xl:text-base text-sm">{{ $t('HomeBanner.CallToAction') }}</p>
-                </button>
-              </a>
+              <div class=" mt-10 inline-flex">
+                <a href="mailto:fernandokojdev@gmail.com" target="_blank">
+                  <button type="button" class="flex items-center drop-shadow-xl xl:w-36 w-32 xl:h-12 h-10  rounded-md bg-amber-600 font-semibold text-lg text-zinc-100 hover:bg-amber-700">
+                    <font-awesome-icon icon="fa-solid fa-envelope" class="px-3" />
+                    <p class="xl:text-base text-sm">{{ $t('HomeBanner.CallToAction') }}</p>
+                  </button>
+                </a>
+                <a :href="$t('HomeBanner.CallToActionResume') === 'Curriculo' ? Curriculo : Resume" target="_blank">
+                  <button type="button" class="ml-2 flex items-center drop-shadow-xl xl:w-36 w-32 xl:h-12 h-10  rounded-md bg-amber-600 font-semibold text-lg text-zinc-100 hover:bg-amber-700">
+                    <font-awesome-icon icon="fa-solid fa-download" class="px-3" />
+                    <p class="xl:text-base text-sm">{{ $t('HomeBanner.CallToActionResume') }}</p>
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -74,12 +84,12 @@ let windowWidth = computed(() => store.getters.getWindowWidth)
                   <font-awesome-icon icon="fa-brands fa-codepen" size="lg" />
                 </a>
               </div>
-              <!-- <a href="mailto:fernandokojdev@gmail.com" target="_blank">
-                <button type="button" class="flex items-center drop-shadow-xl justify-center items-center mt-10 w-36 h-12 rounded-md bg-amber-600 font-semibold text-lg text-zinc-100 hover:bg-amber-700">
-                  <font-awesome-icon icon="fa-solid fa-envelope" />
-                  <p class="pl-2">{{ $t('HomeBanner.CallToAction') }}</p>
+              <a :href="$t('HomeBanner.CallToActionResume') === 'Curriculo' ? Curriculo : Resume" target="_blank">
+                <button type="button" class="flex items-center drop-shadow-xl xl:w-36 w-32 xl:h-12 h-10  rounded-md bg-amber-600 font-semibold text-lg text-zinc-100 hover:bg-amber-700">
+                  <font-awesome-icon icon="fa-solid fa-download" class="px-3"/>
+                  <p class="xl:text-base text-sm">{{ $t('HomeBanner.CallToActionResume') }}</p>
                 </button>
-              </a> -->
+              </a>
             </div>
           </div>
           <AnimationComp />
