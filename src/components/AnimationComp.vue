@@ -18,7 +18,7 @@ onMounted(()=>{
 </script>
 
 <template>
-  <div id="animationLines" class="z-30 relative w-full h-full">
+  <div id="animationLines" class="z-30 relative w-full h-full" style="max-height: 1028px;">
     <div class="circle-background sizing" style="width: 512px; height: 512px;"></div>
     <div class="kirby sizing" style="width: 512px; height: 512px;"></div>
   </div>

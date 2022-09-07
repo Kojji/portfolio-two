@@ -18,7 +18,7 @@ let windowWidth = computed(() => store.getters.getWindowWidth)
       <div class="grid grid-cols-5 grid-flow-col">
         <!-- <div class="bg-gray-600 h-screen"> -->
         <div v-if="windowWidth > 767.98" class="col-span-2 h-screen z-40">
-          <div class="h-full w-full flex flex-col justify-center items-end">
+          <div class="h-full w-full flex flex-col justify-center items-end" style="max-height: 1028px;">
             <div class="w-fit h-min">
               <div class="inline-flex mb-2">
                 <a href="https://wa.me/+5511934282440" target="_blank" class="mx-1 flex items-center w-10 h-10 rounded-full bg-amber-600 hover:bg-amber-700 place-content-center " style="color:white;">
@@ -60,7 +60,7 @@ let windowWidth = computed(() => store.getters.getWindowWidth)
           </div>
         </div>
         <div class="md:col-span-3 col-span-5 h-screen relative">
-          <div v-if="windowWidth <= 768" class="h-full w-full flex flex-col justify-end items-start z-40 absolute pb-10">
+          <div v-if="windowWidth <= 768" class="h-full w-full flex flex-col justify-end items-start z-40 absolute pb-10" style="max-height: 1028px;">
             <div class="w-fit h-min bg-purple-700 bg-opacity-50 p-5 rounded-md">
               <h1 class="text-white font-bold text-4xl font-sans">FERNANDO KOJI</h1>
               <p class="text-white font-semibold text-2xl">{{$t('HomeBanner.Profession')}}</p>
