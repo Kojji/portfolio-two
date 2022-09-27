@@ -81,13 +81,13 @@ export default {
                 title: "cae",
                 valueMenu: "2018 - [CAE] Cambrigde",
                 valueLabel: "2018 - [Certificate in Advanced English (CAE)] Cambrigde English",
-                valueDescription: "Certification regarding the score of 183 at Cambridge's Certificate in Advanced English (CAE) examination, equivalent to CEFR's C1 Level.",
+                valueDescription: "Certification regarding the score of 193 at Cambridge's Certificate in Advanced English (CAE) examination, equivalent to CEFR's C1 Level.",
               },
               {
                 title: "fce",
                 valueMenu: "2017 - [FCE] Cambrigde",
                 valueLabel: "2017 - [First Certificate in English (FCE)] Cambrigde English",
-                valueDescription: "Certification regarding the score of 193 at Cambridge's First Certificate in English (FCE) examination, equivalent to CEFR's C1 Level.",
+                valueDescription: "Certification regarding the score of 183 at Cambridge's First Certificate in English (FCE) examination, equivalent to CEFR's C1 Level.",
               }
             ]
           }
@@ -304,14 +304,14 @@ export default {
                 title: "cae",
                 valueMenu: "2018 - [CAE] Cambrigde",
                 valueLabel: "2018 - [Certificate in Advanced English (CAE)] Cambridge English",
-                valueDescription: "Certificado de pontuação 183 no exame <i>Certificate in Advanced English</i> (CAE) de Cambridge, equivalente ao nível C1 do <i>CEFR</i>.",
+                valueDescription: "Certificado de pontuação 193 no exame <i>Certificate in Advanced English</i> (CAE) de Cambridge, equivalente ao nível C1 do <i>CEFR</i>.",
               },
               {
                 id: 3,
                 title: "fce",
                 valueMenu: "2017 - [FCE] Cambrigde",
                 valueLabel: "2017 - [First Certificate in English (FCE)] Cambrigde English",
-                valueDescription: "Certificado de pontuação 193 no exame <i>First Certificate in English</i> (FCE) de Cambridge, equivalente ao nível C1 do <i>CEFR</i>.",
+                valueDescription: "Certificado de pontuação 183 no exame <i>First Certificate in English</i> (FCE) de Cambridge, equivalente ao nível C1 do <i>CEFR</i>.",
               },
             ]
           }
