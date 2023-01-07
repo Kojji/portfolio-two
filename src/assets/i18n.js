@@ -54,6 +54,12 @@ export default {
             value: "Education Background",
             items: [
               {
+                title: "ECAC",
+                valueMenu: "2024 - [Diploma] ECAC",
+                valueLabel: "2023 ~ 2024 - [Information Technology] ECA College",
+                valueDescription: "Currently doing the Vocational Course 'Diploma in Information Technology' on ECA College Brisbane, with expected conclusion in 2024.",
+              },
+              {
                 title: "ufgd",
                 valueMenu: "2021 - [Diploma] UFGD",
                 valueLabel: "2021 - [Computer Engineering] UFGD",
@@ -117,7 +123,7 @@ export default {
                 valueMenu: "2021 - TeachLearn",
                 valueLabel: "Jan. 2021 ~ Jul. 2021 - [Freelance] TeachLearn",
                 valueDescription: "I took part into the development of TeachLearn's first versions, made in <b>Vue.js with Quasar and Node.js with Express.js</b>. My tasks involved both, front end and back end development, but most of them were on the <b>development of endpoints</b>. " +
-                  "One of my most notorius activities at this service, was the <b>development and implementation of a chat system with socket.io</b>.",
+                  "One of my most notorious activities at this service, was the <b>development and implementation of a chat system with socket.io</b>.",
               },
               {
                 title: "dourasoftFree",
@@ -271,6 +277,12 @@ export default {
             title: "education",
             value: "Formação Acadêmica",
             items: [
+              {
+                title: "ECAC",
+                valueMenu: "2024 - [Diploma] ECAC",
+                valueLabel: "2023 ~ 2024 - [Tecnologis da Informação] ECA College",
+                valueDescription: "Atualmente fazendo o curso vocacional 'Diploma in Information Technology' no ECA College Brisbane, com conclusão esperada em 2024.",
+              },
               {
                 id: 1,
                 title: "ufgd",

@@ -8,7 +8,8 @@ let educationItems = reactive([
     title: $t('InfoCards.Education.Sections[0].title'),
     items: [
       $t('InfoCards.Education.Sections[0].items[0].title'),
-      $t('InfoCards.Education.Sections[0].items[1].title')
+      $t('InfoCards.Education.Sections[0].items[1].title'),
+      $t('InfoCards.Education.Sections[0].items[2].title'),
     ]
   },
   {

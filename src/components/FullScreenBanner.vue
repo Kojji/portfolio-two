@@ -39,6 +39,9 @@ let windowWidth = computed(() => store.getters.getWindowWidth)
                 <a href="https://codepen.io/kojji" target="_blank" class="mx-1 flex items-center w-10 h-10 rounded-full bg-amber-600 hover:bg-amber-700 place-content-center " style="color:white;">
                   <font-awesome-icon icon="fa-brands fa-codepen" size="xl" />
                 </a>
+                <a href="https://medium.com/@fernandokojidev" target="_blank" class="mx-1 flex items-center w-10 h-10 rounded-full bg-amber-600 hover:bg-amber-700 place-content-center " style="color:white;">
+                  <font-awesome-icon icon="fa-brands fa-medium" size="xl" />
+                </a>
               </div>
               <h1 class="text-white font-bold xl:text-5xl text-4xl font-sans">FERNANDO KOJI</h1>
               <p class="text-white font-semibold xl:text-3xl text-2xl">{{$t('HomeBanner.Profession')}}</p>
@@ -82,6 +85,9 @@ let windowWidth = computed(() => store.getters.getWindowWidth)
                 </a>
                 <a href="https://codepen.io/kojji" target="_blank" class="mx-1 flex items-center w-8 h-8 rounded-full bg-amber-600 place-content-center " style="color:white;">
                   <font-awesome-icon icon="fa-brands fa-codepen" size="lg" />
+                </a>
+                <a href="https://medium.com/@fernandokojidev" target="_blank" class="mx-1 flex items-center w-8 h-8 rounded-full bg-amber-600 place-content-center " style="color:white;">
+                  <font-awesome-icon icon="fa-brands fa-medium" size="lg" />
                 </a>
               </div>
               <a :href="$t('HomeBanner.CallToActionResume') === 'Curriculo' ? Curriculo : Resume" target="_blank">
