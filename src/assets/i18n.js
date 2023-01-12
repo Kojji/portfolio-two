@@ -154,7 +154,7 @@ export default {
                 title: "myCrurriculum",
                 valueMenu: "2022 - MyCurriculum",
                 valueLabel: "2022 - MyCurriculum",
-                valueDescription: "<a href=\"https://github.com/Kojji/my-curriculum\" target=\"_blank\"><span style=\"color:blue;font-weight:bold\">[Project available on GitHub]</span></a> Preview available at <a href=\"https://portfolio-231.web.app\" target=\"_blank\"><span style=\"color:blue;font-weight:bold\">portfolio-231.web.app</span></a>, this project was the first version of this portfolio. At that time, I had set some extras challenges for me, like using <b>Vue.js with bootstrap</b>, which I haven't used previously, and the <b>development of a CSS animation</b> exclusively for the page.",
+                valueDescription: "<a href=\"https://github.com/Kojji/my-curriculum\" target=\"_blank\"><span style=\"color:blue;font-weight:bold\">[Project available on GitHub]</span></a> Preview available at <a href=\"https://portfolio-232.web.app\" target=\"_blank\"><span style=\"color:blue;font-weight:bold\">portfolio-232.web.app</span></a>, this project was the first version of this portfolio. At that time, I had set some extras challenges for me, like using <b>Vue.js with bootstrap</b>, which I haven't used previously, and the <b>development of a CSS animation</b> exclusively for the page.",
               },
               {
                 title: "cadastrare",
@@ -384,7 +384,7 @@ export default {
                 title: "myCrurriculum",
                 valueMenu: "2022 - MyCurriculum",
                 valueLabel: "2022 - MyCurriculum",
-                valueDescription: "<a href=\"https://github.com/Kojji/my-curriculum\" target=\"_blank\"><span style=\"color:blue;font-weight:bold\">[Projeto presente no GitHub]</span></a> Visão disponível em <a href=\"https://portfolio-231.web.app\" target=\"_blank\"><span style=\"color:blue;font-weight:bold\">portfolio-231.web.app</span></a>, este projeto é referente à primeira versão deste portfolio. Na época, eu propus alguns desafios extras para mim mesmo, ao usar pela primeira vez o <b>Vue.js com Bootstrap</b> para o desenvolvimento da página, além do <b>desenvolvimento de uma animação CSS</b> exclusivamente para esta página.",
+                valueDescription: "<a href=\"https://github.com/Kojji/my-curriculum\" target=\"_blank\"><span style=\"color:blue;font-weight:bold\">[Projeto presente no GitHub]</span></a> Visão disponível em <a href=\"https://portfolio-232.web.app\" target=\"_blank\"><span style=\"color:blue;font-weight:bold\">portfolio-232.web.app</span></a>, este projeto é referente à primeira versão deste portfolio. Na época, eu propus alguns desafios extras para mim mesmo, ao usar pela primeira vez o <b>Vue.js com Bootstrap</b> para o desenvolvimento da página, além do <b>desenvolvimento de uma animação CSS</b> exclusivamente para esta página.",
               },
               {
                 title: "cadastrare",
