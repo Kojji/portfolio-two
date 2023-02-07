@@ -36,6 +36,7 @@ export default {
       CallToAction: "Contact Me",
       CallToActionResume: "Resume",
       Profession: "Web Developer",
+      PhoneNumber: "+61416460092"
       // Text: "Welcome to my online portfolio. In this page, there are a considerable amount of information about me, my skills and professional experiences. " +
       //   "Anyways, you can email me with the button below. On the footer, I've left some links, that could help you to either, get in touch with me or get to know more things about me."
     },
@@ -259,6 +260,7 @@ export default {
       CallToAction: "Contate me",
       CallToActionResume: "Curriculo",
       Profession: "Desenvolvedor Web",
+      PhoneNumber: "+5511934282440"
       // Text: "Bem vindo(a) ao meu portfolio online. Acredito que nesta página tenha uma boa quantidade de informações sobre mim, minhas competências e experiências. " + 
       //   "Mas, qualquer coisa, é possível me enviar um email pelo botão abaixo. No rodapé da página há outros meios de comunicação e links externos que possam lhe interessar."
     },

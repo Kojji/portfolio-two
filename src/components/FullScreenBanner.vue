@@ -21,7 +21,7 @@ let windowWidth = computed(() => store.getters.getWindowWidth)
           <div class="h-full w-full flex flex-col justify-center items-end" style="max-height: 1028px;">
             <div class="w-fit h-min">
               <div class="inline-flex mb-2">
-                <a href="https://wa.me/+5511934282440" target="_blank" class="mx-1 flex items-center w-10 h-10 rounded-full bg-amber-600 hover:bg-amber-700 place-content-center " style="color:white;">
+                <a :href="`https://wa.me/${$t('HomeBanner.PhoneNumber')}`" target="_blank" class="mx-1 flex items-center w-10 h-10 rounded-full bg-amber-600 hover:bg-amber-700 place-content-center " style="color:white;">
                   <font-awesome-icon icon="fa-brands fa-whatsapp" size="xl" />
                 </a>
                 <!-- <a href="mailto:fernandokojidev@gmail.com" target="_blank" class="mx-1 flex items-center w-10 h-10 rounded-full bg-amber-600 hover:bg-amber-700 place-content-center " style="color:white;">
@@ -68,7 +68,7 @@ let windowWidth = computed(() => store.getters.getWindowWidth)
               <h1 class="text-white font-bold text-4xl font-sans">FERNANDO KOJI</h1>
               <p class="text-white font-semibold text-2xl">{{$t('HomeBanner.Profession')}}</p>
               <div class="inline-flex my-2">
-                <a href="https://wa.me/+5511934282440" target="_blank" class="mx-1 flex items-center w-8 h-8 rounded-full bg-amber-600 place-content-center " style="color:white;">
+                <a :href="`https://wa.me/${$t('HomeBanner.PhoneNumber')}`" target="_blank" class="mx-1 flex items-center w-8 h-8 rounded-full bg-amber-600 place-content-center " style="color:white;">
                   <font-awesome-icon icon="fa-brands fa-whatsapp" size="lg" />
                 </a>
                 <a href="mailto:fernandokojidev@gmail.com" target="_blank" class="mx-1 flex items-center w-8 h-8 rounded-full bg-amber-600 place-content-center " style="color:white;">

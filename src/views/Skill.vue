@@ -26,6 +26,11 @@ const skillIcons = [
     iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
     alt: "typescript icon"
   },
+  {
+    name: "Tailwind",
+    iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg",
+    alt: "tailwind css icon"
+  },
   // {
   //   name: "Docker",
   //   iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
@@ -42,8 +47,8 @@ const skillIcons = [
         <div class="px-3 bg-gray-100 font-semibold xl:text-lg text-base rounded-t-md uppercase">{{$t('InfoCards.Skills.CardOne')}}</div>
         <div class="grid lg:grid-cols-2 grid-cols-1 items-center">
           <div :key="skill.name" v-for="skill of skillIcons">
-            <div class="md:p-3 my-2">
-              <img :src="skill.iconUrl" class="rounded" alt="...">
+            <div class="md:p-3 my-2" >
+              <img :src="skill.iconUrl" :class="skill.name === 'AWS' ? 'rounded my-4' : 'rounded'" alt="...">
               <p class="font-semibold">{{skill.name}}</p>
             </div>
           </div>
