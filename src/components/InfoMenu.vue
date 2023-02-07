@@ -19,7 +19,7 @@ const changeItem = (newItem) => {
 
 <template>
   <div>
-    <div id="horizontal-menu" class="w-full inline-flex justify-center items-center md:my-10 my-5">
+    <div id="horizontal-menu" class="w-full inline-flex justify-center items-center md:my-5 my-5">
       <div v-for="(items, index) in menuItems" :key="items">
         <router-link :to="$t(`HorizontalMenu[${index}].route`)">
           <button 

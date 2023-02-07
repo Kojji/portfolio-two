@@ -17,7 +17,7 @@ let windowWidth = computed(() => store.getters.getWindowWidth)
     <div class="mx-auto px-5 container">
       <div class="grid grid-cols-5 grid-flow-col">
         <!-- <div class="bg-gray-600 h-screen"> -->
-        <div v-if="windowWidth > 767.98" class="col-span-2 h-screen z-40">
+        <div v-if="windowWidth > 767.98" class="col-span-2 z-40" style="height: 95vh;">
           <div class="h-full w-full flex flex-col justify-center items-end" style="max-height: 1028px;">
             <div class="w-fit h-min">
               <div class="inline-flex mb-2">
@@ -62,7 +62,7 @@ let windowWidth = computed(() => store.getters.getWindowWidth)
             </div>
           </div>
         </div>
-        <div class="md:col-span-3 col-span-5 h-screen relative">
+        <div class="md:col-span-3 col-span-5 relative" style="height: 95vh;">
           <div v-if="windowWidth <= 768" class="h-full w-full flex flex-col justify-end items-start z-40 absolute pb-10" style="max-height: 1028px;">
             <div class="w-fit h-min bg-purple-700 bg-opacity-50 p-5 rounded-md">
               <h1 class="text-white font-bold text-4xl font-sans">FERNANDO KOJI</h1>

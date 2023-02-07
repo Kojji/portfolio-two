@@ -130,13 +130,13 @@ export default {
                 title: "dourasoftFree",
                 valueMenu: "2020 - DouraSoft",
                 valueLabel: "Nov. 2019 ~ Apr. 2020 - [Freelance] DouraSoft",
-                valueDescription: "After my Computer Engineering mandatory internship, I did some services as a Freelancer at Dourasoft. I <b>developed and integrated a Whatsapp bot made with Java and selenium</b> into the company's commercialized system. I also created a <b>SQL script for the database migration</b> from their desktop legacy system to their current web app system.",
+                valueDescription: "After my Computer Engineering mandatory internship, I did some services as a Freelancer at Dourasoft. I <b>developed and integrated a Whatsapp bot made with Java and selenium</b> into the company's commercialised system. I also created a <b>SQL script for the database migration</b> from their desktop legacy system to their current web app system.",
               },
               {
                 title: "dourasoftIntern",
                 valueMenu: "2019 - DouraSoft",
                 valueLabel: "Feb. 2019 ~ Jun. 2019 - [Internship] DouraSoft",
-                valueDescription: "To conclude my Computer Engineering course, I did my mandatory internship at Dourasoft, where I developed an OCR functionality to be integrated into company's developed and commercialized system. It was done with <b>Amazon Textract (OCR)</b>. " + 
+                valueDescription: "To conclude my Computer Engineering course, I did my mandatory internship at Dourasoft, where I developed an OCR functionality to be integrated into company's developed and commercialised system. It was done with <b>Amazon Textract (OCR)</b>. " + 
                   "During the internship, <b>Vue.js with Quasar, PHP with CakePHP, PostgreSQL, Google Cloud Services and Firebase skills</b> were also learned.",
               },
             ]
@@ -208,7 +208,7 @@ export default {
         PageTitle: "About Me",
         ParagraphFirst: "Hi, I'm Fernando. Graduated in Computer Engineering, I'm a web developer. Working mostly as a back end developer. " + 
           "I've already worked as a full stack web developer and, in some other projects, either in front end or back end development, which can be seen on the <b>\"Experience\"</b> tab. " + 
-          "My main development stack is composed of Vue.js, Node.js and Typescript, but I've acquired knowledge in other concepts and technologies. To read a more detailed description of what I know, you can go straight to the <b>\"Skills\"</b> tab.",
+          "My main development stack is composed of Vue.js, Node.js, Typescript and AWS Services, but I've acquired knowledge in other concepts and technologies. To read a more detailed description of what I know, you can go straight to the <b>\"Skills\"</b> tab.",
         ParagraphSecond: "In terms of web development, my biggest interests are <b>API development and CSS/JS animations</b>. Sadly, I still don't have the skillset to completely make the animations I envision. But one day I'll get there. " +
           "Spite the fact that I've acquired some API development experience, I know there is a lot of room for improvement, mainly at this profession, which requires constant growth. Although, I do believe I have the more than enough potencial and persistance to learn whatever is needed.",
         ParagraphThird: "A bunch of information about my capabilities and previous expeciences can be found in this page. Anyhow, there are <b>links in the footer</b>, which you can use to either get to know me better, or to get in touch with me. Hope you enjoy this personal page. 😁",
@@ -218,7 +218,7 @@ export default {
         TextOne: "The card on the left is there to provide a more straight display of my main skills, the reading of the beneath parts and the <b>\"Experience\"</b> tab are complementary to each other, giving a little more understanding of my capabilities and current knowledge.",
         TextTwo: "In terms of API development, I've had professional experience using PHP with Cake PHP, but ever since that, I've been using <b>Node.js with Express.js or AdonisJs, and typescript</b>. Unfortunately, I'm not very familiar to automated testing on a professional environment, but I've started studying about unit testing and Ent-to-End testing. Besides that, I've acquired some other skills, for example, <b>usage of sockets; conteiners; cloud services like firebase, GCP and AWS; and creation of linux based web servers</b> from previous experiences.",
         TextThree:  "About front end development, I'm more knowledgeable about <b>Vue.js with some component frameworks such as Quasar, Vuetify, Bootstrap and Tailwind</b>. Due to previous expereiences, I've also learned <b>vanilla HTML, Javascript and CSS</b>.",
-        TextFour: "At the moment, mainly due to my current job, I'm enhancing my skills in back end development. But in my spare time, for the long run, <b>I'm aiming to acquire more knowledge on CSS and JS animations, creation and manipulation of SVGs, automated testing and AWS cloud architecturing</b>.",
+        TextFour: "At the moment, in my spare time, <b>I've been aiming to acquire more knowledge on CSS and JS animations, creation and manipulation of SVGs, automated testing and AWS cloud architecturing</b>.",
         CardOne: "Main"
       }
     }
@@ -439,7 +439,7 @@ export default {
         PageTitle: "Sobre Mim",
         ParagraphFirst: "Olá, sou o Fernando. Formado em Engenharia de Computação, sou um desenvolvedor web. Atuando principalmente com back end. " + 
           "Já tive atuações como desenvolvedor full stack e desenvolvi alguns outros projetos só no front end ou só no back end, que podem ser vistos na aba <b>\"Experiência\"</b>. " +
-          "Meu stack de desenvolvimento principal é composto de Vue.js, Node.js e Typescript, mas tenho conhecimento em outros conceitos e tecnologias. Para ter uma descrição mais detalhada do que eu sei, pode ir direto na aba <b>\"Habilidades\"</b>.",
+          "Meu stack de desenvolvimento principal é composto de Vue.js, Node.js, Typescript e serviços AWS, mas tenho conhecimento em outros conceitos e tecnologias. Para ter uma descrição mais detalhada do que eu sei, pode ir direto na aba <b>\"Habilidades\"</b>.",
         ParagraphSecond: "Dentro do desenvolvimento web, meus maiores interesses são, o <b>desenvolvimento de APIs e animações CSS/JS</b>. Infelizmente ainda não tenho as habilidades necessárias para ser capaz de desenvolver plenamente as animações que imagino. Mas acredito que um dia chegarei lá. " +
           "Apesar de já ter um pouco de experiência no desenvolvimento de APIs, reconheço que há muito espaço para crescimento, ainda mais nessa área que demanda evolução constante, mas acredito ter o potêncial e a persistência necessária para o aprendizado.",
         ParagraphThird: "Acredito que nesta página tenha uma boa quantidade de informações sobre mim, minhas competências e experiências. Se desejar, há <b>links no rodapé</b> desta página que podem ser úteis para ver mais coisas sobre mim, ou entrar em contato. Espero que você goste deste meu portfolio. 😁"
@@ -449,7 +449,7 @@ export default {
         TextOne: "O cartão ao lado tem o objetivo de gerar uma visão mais resumida e direta de meus conhecimentos principais, a leitura dos trechos abaixo e da aba de <b>\"Experiência\"</b> servem como um complemento, aprofundando um pouco mais sobre o nível de conhecimento e habilidades atuais que tenho.",
         TextTwo: "Para o desenvolvimento de APIs, tive uma experiência profissional usando PHP com Cake PHP, porém, desde então venho usando <b>Node.js com Express.js ou AdonisJs, além de typescrypt</b>. Infelizmente não tive muito contato profissional com testes automatizados, mas já iniciei meus estudos, tanto sobre testes unitários quanto testes <i>End-to-End</i>. Fora isso, adquiri conhecimentos de <b>integração de sockets; uso de contêineres; uso de serviços cloud como firebase, google Cloud Platform e AWS; e levantamento de servidores web linux</b> em experiências prévias.",
         TextThree:  "No front end, tenho mais conhecimentos de <b>Vue.js, com diversos frameworks de componentização, como Vuetify, Bootstrap, Quasar e Tailwind</b>. Com as minhas experiências anteriores no desenvolvimento front end também foram adquiridos conhecimentos de <b>HTML, Javascript e CSS</b>.",
-        TextFour: "No momento, estou adquirindo mais conhecimentos de desenvolvimento back end, principalmente devido ao meu emprego atual, mas em meu tempo livre, e a médio prazo, <b>estou visando adquirir mais conhecimento de animações CSS e JS, criação e manipulação de imagens svg, testes automatizados e arquitetura Cloud no AWS</b>.",
+        TextFour: "No momento, em meu tempo livre, <b>estou visando adquirir mais conhecimento de animações CSS e JS, criação e manipulação de imagens svg, testes automatizados e arquitetura Cloud no AWS</b>.",
         CardOne: "Principal",
       }
     }
